@@ -1,0 +1,135 @@
+/*::::::::::::::::::::::::::цвета:::::::::::::::::::::::::::::::::::::::::::::::*/
+// $accent:#fe3e57;
+// $default:#8d8d8d;
+// $title:#29282d;
+// $white: #ffffff;
+// $bg:#f6f6f6;
+// $yellow: #ffb534;
+// $blue: #34c3ff;
+/*::::::::::::::::::::::::::цвета-finish::::::::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::переменные::::::::::::::::::::::::::::::::::::::::::*/
+$row: 1;
+$row-2:2;
+$row-3:3;
+$row-10:10;
+/*::::::::::::::::::::::::::переменные-finish:::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::mixins::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@mixin overflow($row) {
+  -webkit-line-clamp: $row;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/*::::::::::::::::::::::::::mixins-finish::::::::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::обои::::::::::::::::::::::::::::::::::::::::::::::::*/
+// %bg-left {
+//   background-position: left center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+
+// %bg-center-cover {
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+
+// %bg-center-contain {
+//   background-position: center;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
+
+/*::::::::::::::::::::::::::обои-finish:::::::::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::брекпоинты::::::::::::::::::::::::::::::::::::::::::*/
+$xl: 1230px;
+$lg: 1200px;
+$mdb: 1100px;
+$md: 1050px;
+$mdl: 992px;
+$sm: 860px;
+$smx: 768px;
+$smz: 700px;
+$sms: 620px;
+$smm: 500px;
+$xs: 450px;
+$xxs: 375px;
+
+/*::::::::::::::::::::::::::брекпоинты-finish:::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::миксин для брейкпоинтов:::::::::::::::::::::::::::::*/
+@mixin media-w($w) {
+  @media only screen and (max-width: $w) {
+    @content;
+  }
+}
+
+/*::::::::::::::::::::::::::миксин для брейкпоинтов-finish::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::наследование для шрифтов::::::::::::::::::::::::::::*/
+%avenirNextCyr-700 {
+  font-family: 'AvenirNextCyr-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%avenirNextCyr-Demi600 {
+  font-family: 'AvenirNextCyr-Demi', sans-serif;
+  font-weight: 600;
+}
+
+%avenirNextCyr-Medium-750 {
+  font-family: 'AvenirNextCyr-Medium', sans-serif;
+  font-weight: 750;
+}
+
+%avenirNextCyr-Heavy-800 {
+  font-family: 'AvenirNextCyr-Heavy', sans-serif;
+  font-weight: 800;
+}
+
+/*::::::::::::::::::::::::::наследование для шрифтов-finish:::::::::::::::::::::*/
+/*::::::::::::::::::::::::::наследование для кнопки:::::::::::::::::::::::::::::*/
+// %btn {
+//   padding: 12px 26px;
+//   background-color: $accent;
+//   color: $white;
+//   text-transform: uppercase;
+//   @extend %roboto-400;
+//   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+// }
+
+// %btn-hover {
+//   background-color: #fff;
+//   color: #29282d;
+//   border: 1px solid #fe3e57;
+//   box-shadow: 20px 7px 20px 0px rgba(255, 17, 48, 0.3);
+// }
+
+// %checkbox-hiden {
+//   width: 1px;
+//   height: 1px;
+//   overflow: hidden;
+//   clip: rect(0 0 0 0);
+//   position: absolute;
+// }
+
+// %radio-hidden {
+//   width: 1px;
+//   height: 1px;
+//   overflow: hidden;
+//   clip: rect(0 0 0 0);
+//   position: absolute;
+// }
+
+/*::::::::::::::::::::::::::наследование для кнопки-finish::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::fancybox-snipet:::::::::::::::::::::::::::::::::::::*/
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+/*::::::::::::::::::::::::::fancybox-snipet-finish::::::::::::::::::::::::::::*/

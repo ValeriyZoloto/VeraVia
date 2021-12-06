@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  // color: $default;
+  // font-size: 16px;
+  // line-height: 1.6;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // position: fixed;
+  // overflow-y: scroll;
+  // @extend %quicksand-500;
+}
+
+a {
+  // color: $default;
+  // font-size: 16px;
+  // line-height: 1.6;
+  // @extend %quicksand-500;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  // max-width: 1200px;
+  // padding: 0 15px;
+  // margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  // text-align: center;
+  // @extend %roboto-700;
+  // font-size: 48px;
+  // line-height: 1.35;
+  // color: $title;
+  // text-transform: uppercase;
+
+  // @include media-w($sms) {
+  //   font-size: 40px;
+  // }
+
+  // @include media-w($xxs) {
+  //   font-size: 32px;
+  // }
+}
