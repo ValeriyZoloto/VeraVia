@@ -1,1 +1,179 @@
-.header {}
+.header {
+  position: relative;
+  padding: 46px 0px 178px 0px;
+  background-image: url(../images/header/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 155px;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 806px;
+  }
+
+  &__subtitle {
+    display: block;
+    @extend %avenirNextCyr-Demi600;
+    color: $gray;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: -2px;
+    @include overflow($row);
+  }
+
+  &__logo {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 438px;
+      height: 438px;
+      top: -219px;
+      right: -87px;
+      background: $blue;
+      opacity: 0.16;
+      filter: blur(247px);
+    }
+  }
+
+  &__tel {
+    position: relative;
+    @extend %avenirNextCyr-Medium-450;
+    padding-left: 26px;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: right;
+    margin-top: -13px;
+    transition: 0.5s;
+
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      text-decoration: underline;
+      color: $blue;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 25px;
+      height: 25px;
+      left: -10px;
+      top: 0px;
+      background-image: url(../images/header/tel.png);
+      @extend %bg-center-cover;
+    }
+  }
+
+  &__title {
+    margin-bottom: 9px;
+  }
+
+  &__text {
+    max-width: 580px;
+    font-size: 18px;
+    @include overflow($row-3);
+    margin-bottom: 86px;
+  }
+
+  &__guarantee {
+    max-width: 576px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+  }
+
+  &__guarantee-img {
+    width: 71px;
+    height: 71px;
+  }
+
+  &__guarantee-content {
+    width: 100%;
+    max-width: 472px;
+  }
+
+  &__guarantee-title {
+    @extend %avenirNextCyr-700;
+    font-size: 18px;
+    margin: 2px 0px 7px 0px;
+    @include overflow($row);
+  }
+
+  &__guarantee-text {
+    @extend %avenirNextCyr-Medium-450;
+    font-size: 18px;
+    line-height: 1.38;
+    color: $blue;
+  }
+
+  &__btn {
+    width: 479px;
+    height: 60px;
+  }
+
+  &__down {
+    position: absolute;
+    left: 47%;
+    transform: translateX(-50%);
+    bottom: 217px;
+    @extend %avenirNextCyr-Demi600;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    color: $gray;
+    transform: rotate(-90deg);
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 37px;
+      left: -59px;
+      bottom: -13px;
+      background-image: url(../images/header/down.png);
+      transform: rotate(90deg);
+      @extend %bg-center-cover;
+    }
+  }
+
+
+  &__consultation {
+    position: absolute;
+    top: 403px;
+    left: 3%;
+    @extend %avenirNextCyr-Demi600;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    color: $blue;
+    transform: rotate(-90deg);
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 139px;
+      height: 139px;
+      top: -65px;
+      right: -160px;
+      background-image: url(../images/header/telephones.png);
+      @extend %bg-center-cover;
+      transform: rotate(90deg);
+    }
+  }
+}

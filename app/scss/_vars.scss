@@ -1,8 +1,8 @@
 /*::::::::::::::::::::::::::цвета:::::::::::::::::::::::::::::::::::::::::::::::*/
-// $accent:#fe3e57;
+$gray:#747D81;
 // $default:#8d8d8d;
-// $title:#29282d;
-// $white: #ffffff;
+$blue:#00E0FF;
+$white: #ffffff;
 // $bg:#f6f6f6;
 // $yellow: #ffb534;
 // $blue: #34c3ff;
@@ -24,23 +24,23 @@ $row-10:10;
 
 /*::::::::::::::::::::::::::mixins-finish::::::::::::::::::::::::::::::::::::::::*/
 /*::::::::::::::::::::::::::обои::::::::::::::::::::::::::::::::::::::::::::::::*/
-// %bg-left {
-//   background-position: left center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
+%bg-left {
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-// %bg-center-cover {
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-// }
+%bg-center-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-// %bg-center-contain {
-//   background-position: center;
-//   background-size: contain;
-//   background-repeat: no-repeat;
-// }
+%bg-center-contain {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 /*::::::::::::::::::::::::::обои-finish:::::::::::::::::::::::::::::::::::::::::*/
 /*::::::::::::::::::::::::::брекпоинты::::::::::::::::::::::::::::::::::::::::::*/
@@ -69,7 +69,7 @@ $xxs: 375px;
 /*::::::::::::::::::::::::::наследование для шрифтов::::::::::::::::::::::::::::*/
 %avenirNextCyr-700 {
   font-family: 'AvenirNextCyr-Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 750;
 }
 
 %avenirNextCyr-Demi600 {
@@ -77,9 +77,9 @@ $xxs: 375px;
   font-weight: 600;
 }
 
-%avenirNextCyr-Medium-750 {
+%avenirNextCyr-Medium-450 {
   font-family: 'AvenirNextCyr-Medium', sans-serif;
-  font-weight: 750;
+  font-weight: 450;
 }
 
 %avenirNextCyr-Heavy-800 {
@@ -89,21 +89,34 @@ $xxs: 375px;
 
 /*::::::::::::::::::::::::::наследование для шрифтов-finish:::::::::::::::::::::*/
 /*::::::::::::::::::::::::::наследование для кнопки:::::::::::::::::::::::::::::*/
-// %btn {
-//   padding: 12px 26px;
-//   background-color: $accent;
-//   color: $white;
-//   text-transform: uppercase;
-//   @extend %roboto-400;
-//   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-// }
+%btn {
+  display: block;
+  padding: 22px 5px 22px 5px;
+  background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
+  box-shadow: 0px 7px 20px -7px #00E0FF;
+  border-radius: 9px;
+  border: 2px solid transparent;
+  @extend %avenirNextCyr-700;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $white;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.5s;
+}
 
-// %btn-hover {
-//   background-color: #fff;
-//   color: #29282d;
-//   border: 1px solid #fe3e57;
-//   box-shadow: 20px 7px 20px 0px rgba(255, 17, 48, 0.3);
-// }
+%btn-hover {
+  background: #fff;
+  color: $blue;
+  border: 2px solid $blue;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+}
+
+%btn-active {
+  box-shadow: 20px 7px 20px 0px $blue;
+}
 
 // %checkbox-hiden {
 //   width: 1px;

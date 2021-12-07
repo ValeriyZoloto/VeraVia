@@ -7,15 +7,16 @@ body {
 }
 
 body {
-  // color: $default;
-  // font-size: 16px;
-  // line-height: 1.6;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // position: fixed;
-  // overflow-y: scroll;
-  // @extend %quicksand-500;
+  color: $white;
+  font-size: 15px;
+  line-height: 1.22;
+  background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  overflow-y: scroll;
+  @extend %avenirNextCyr-Medium-450;
 }
 
 a {
@@ -30,9 +31,9 @@ a {
 }
 
 .container {
-  // max-width: 1200px;
-  // padding: 0 15px;
-  // margin: 0 auto;
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .sr-only {
@@ -49,18 +50,40 @@ a {
 }
 
 .title {
-  // text-align: center;
-  // @extend %roboto-700;
-  // font-size: 48px;
-  // line-height: 1.35;
-  // color: $title;
-  // text-transform: uppercase;
+  @extend %avenirNextCyr-Demi600;
+  font-size: 108px;
+  line-height: 132px;
+  background: linear-gradient(180deg, #FFFFFF 31.75%, #1A3031 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 18px;
+  @include overflow($row);
+}
 
-  // @include media-w($sms) {
-  //   font-size: 40px;
-  // }
+.logo {
+  display: block;
+}
 
-  // @include media-w($xxs) {
-  //   font-size: 32px;
-  // }
+.btn {
+  @extend %btn;
+
+  &:hover {
+    @extend %btn-hover;
+  }
+
+  &:active {
+    @extend %btn-active;
+  }
+}
+
+.line {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 4px;
+  box-shadow: 0px 3px 15px rgba(0, 224, 255, 0.93),
+    0px 4px 15px #4AD9EC,
+    0px 0px 24px #00E0FF;
+  filter: blur(2px);
 }
