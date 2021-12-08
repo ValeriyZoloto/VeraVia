@@ -164,16 +164,16 @@
     color: $blue;
     transform: rotate(-90deg);
 
-    &::after {
-      content: '';
-      position: absolute;
-      width: 139px;
-      height: 139px;
-      top: -65px;
-      right: -160px;
-      background-image: url(../images/header/telephones.png);
-      @extend %bg-center-cover;
-      transform: rotate(90deg);
-    }
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   width: 139px;
+    //   height: 139px;
+    //   top: -65px;
+    //   right: -160px;
+    //   background-image: url(../images/header/telephones.png);
+    //   @extend %bg-center-cover;
+    //   transform: rotate(90deg);
+    // }
   }
 }

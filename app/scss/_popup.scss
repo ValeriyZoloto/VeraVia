@@ -1,0 +1,213 @@
+.popup-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(8, 38, 43, 0.5);
+  display: none;
+  z-index: 1;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 816px;
+  background-color: transparent;
+  padding: 24px 24px 0px 0px;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  &__form {
+    padding: 65px 102px 84px 102px;
+    display: flex;
+    flex-direction: column;
+    max-width: 794px;
+    background: linear-gradient(286.41deg, #033958 3.63%, #0F6B78 90.98%);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.53);
+    border-radius: 20px;
+  }
+
+  &__form-title {
+    display: block;
+    margin-bottom: 44px;
+    @extend %avenirNextCyr-Medium-450;
+    font-size: 33px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__form-socials {
+    max-width: 489px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form-item {
+    display: flex;
+    justify-content: center;
+    max-width: 80px;
+  }
+
+  &__form-link {
+    display: block;
+    text-align: center;
+    transition: 0.5s;
+
+    &:hover {
+      border-radius: 9px;
+      padding: 0px 0px;
+      box-shadow: 0px 3px 15px rgba(0, 224, 255, 0.93);
+
+      .popup__form-text {
+        color: $white;
+      }
+
+      .popup-white {
+        display: block;
+      }
+
+      .popup-blue {
+        display: none;
+      }
+    }
+  }
+
+  &__form-socials {
+    padding-bottom: 23px;
+    border-bottom: 1px solid rgba(73, 185, 232, 0.4);
+    margin-bottom: 23px;
+  }
+
+  &__form-iconholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 67px;
+    background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
+    border-radius: 9px;
+    margin-bottom: 9px;
+  }
+
+
+  &__form-text {
+    font-size: 13px;
+    line-height: 1.23;
+    letter-spacing: 0.1em;
+    color: $blue;
+  }
+
+  &__form-name {
+    font-size: 13px;
+    line-height: 1.23;
+    letter-spacing: 0.1em;
+    color: $blue;
+    margin-bottom: 3px;
+  }
+
+  & label {
+    position: relative;
+    margin-bottom: 18px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 37px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 592px;
+      height: 60px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url(../images/popup/input-border.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__form-input {
+    width: 100%;
+    height: 60px;
+    padding: 21px 21px 21px 21px;
+    border: 1px solid transparent;
+    background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
+    border-radius: 9px;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: $white;
+    transition: 0.5s;
+
+    &:focus {
+      outline: 1px solid $blue;
+    }
+
+    &:hover {
+      outline: 1px solid $blue;
+    }
+
+    &:active {
+      box-shadow: 0px 3px 15px rgba(0, 224, 255, 0.93);
+    }
+
+
+    &::placeholder {
+      @extend %avenirNextCyr-Medium-450;
+      font-size: 15px;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      color: $white;
+    }
+  }
+
+  &__btn {
+    max-width: 427px;
+  }
+}
+
+.close-popup {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.poput__form-svg {
+  fill: linear-gradient(228.46deg, #3B768F 19.91%, #3EC6FF 50.51%, #3B768F 80.55%);
+}
+
+.fasebook-svg,
+.whatsapp-svg {
+  width: 43px;
+  height: 43px;
+}
+
+.talk-svg {
+  width: 37px;
+  height: 35px;
+}
+
+.envelope-svg {
+  width: 32px;
+  height: 32px;
+}
+
+.phone-svg {
+  width: 37px;
+  height: 37px;
+}
+
+.popup-white {
+  display: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
