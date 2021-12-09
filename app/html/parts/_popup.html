@@ -140,16 +140,71 @@
       </ul>
       <span class="popup__form-name">Ваше ФИО:</span>
       <label>
-        <input class="popup__form-input" type="text" name="popup-form"
+        <input class="popup__form-input" id="name" type="text" name="popup-form"
           placeholder="Иван Иванович Иванов">
       </label>
       <span class="popup__form-name">Ваш e-mail:</span>
       <label>
-        <input class="popup__form-input" type="text" name="popup-form">
+        <input class="popup__form-input" id="email" type="text" name="popup-form">
       </label>
       <button class="btn popup__btn" type="submit">
         Получить бесплатную консультацию
       </button>
+    </form>
+  </div>
+</div>
+<div class="popup-sucsses-bg">
+  <div class="popup-sucsses">
+    <img class="close-popup close-popup--sucsses" src="images/popup/close-popup.png"
+      alt="Кнопка для закрытия всплывающего окна" width="18" height="18">
+    <span class="popup__form-title">
+      Запрос успешно отправлен!
+    </span>
+  </div>
+</div>
+<div class="popup-errorname-bg">
+  <div class="popup-errorname">
+    <img class="close-popup close-popup--error-name" src="images/popup/close-popup.png"
+      alt="Кнопка для закрытия всплывающего окна" width="18" height="18">
+    <span class="popup__form-title">
+      Нeобходимо заполнить ваше ФИО и email!
+    </span>
+    <button class="btn error-btn">OK</button>
+  </div>
+</div>
+<div class="popup-introductory-bg">
+  <div class="popup-introductory">
+    <img class="close-popup" src="images/popup/close-popup.png"
+      alt="Кнопка для закрытия всплывающего окна" width="18" height="18">
+    <form action="" class="popup-introductory__form">
+      <span class="popup__form-title popup__form-title--introductory">
+        <span class="popup__form-title--blue"> Записаться</span> на
+        ознакомительный вебинар
+      </span>
+      <span class="popup__form-name--introductory">Ваше ФИО:</span>
+      <label class="popup__form-label">
+        <input class="popup__form-input--introductory" id="name-1" type="text"
+          name="popup-form" placeholder="Иван Иванович Иванов">
+      </label>
+      <span class="popup__form-name">Номер телефона:</span>
+      <label class="popup__form-label">
+        <input class="popup__form-input" id="name-1" type="tel" name="popup-form"
+          placeholder="+7 (___) ___-__-__">
+      </label>
+      <span class="popup__form-name">Ваш e-mail:</span>
+      <label class="popup__form-label">
+        <input class="popup__form-input" id="name-1" type="email" name="popup-form"
+          placeholder="name@gmail.com">
+      </label>
+      <span class="popup__form-name">Выберите дату и время вебинара:</span>
+      <label class="popup__form-label">
+        <select class="popup__form-select" name="select-category">
+          <option value="1">2022-12-05 18.00</option>
+          <option value="2">2022-13-05 18.00</option>
+          <option value="3">2022-14-05 18.00</option>
+        </select>
+      </label>
+      <!-- <button class="btn" type="submit">Записаться</button> -->
     </form>
   </div>
 </div>
