@@ -245,14 +245,14 @@
     <img class="close-popup close-popup--error-name" src="images/popup/close-popup.png"
       alt="Кнопка для закрытия всплывающего окна" width="18" height="18">
     <span class="popup__form-title">
-      Нeобходимо заполнить ваше ФИО и email!
+      Нeобходимо заполнить ваше ФИО и email и номер телефона!
     </span>
     <button class="btn error-btn">OK</button>
   </div>
 </div>
 <div class="popup-introductory-bg">
   <div class="popup-introductory">
-    <img class="close-popup" src="images/popup/close-popup.png"
+    <img class="close-popup close-popup--introductory" src="images/popup/close-popup.png"
       alt="Кнопка для закрытия всплывающего окна" width="18" height="18">
     <form action="" class="popup-introductory__form">
       <span class="popup__form-title popup__form-title--introductory">
@@ -266,23 +266,36 @@
       </label>
       <span class="popup__form-name">Номер телефона:</span>
       <label class="popup__form-label">
-        <input class="popup__form-input" id="name-1" type="tel" name="popup-form"
+        <input class="popup__form-input" id="tel" type="tel" name="popup-form"
           placeholder="+7 (___) ___-__-__">
       </label>
       <span class="popup__form-name">Ваш e-mail:</span>
       <label class="popup__form-label">
-        <input class="popup__form-input" id="name-1" type="email" name="popup-form"
+        <input class="popup__form-input" id="email-1" type="email" name="popup-form"
           placeholder="name@gmail.com">
       </label>
-      <span class="popup__form-name">Выберите дату и время вебинара:</span>
-      <label class="popup__form-label">
-        <select class="popup__form-select" name="select-category">
-          <option value="1">2022-12-05 18.00</option>
-          <option value="2">2022-13-05 18.00</option>
-          <option value="3">2022-14-05 18.00</option>
-        </select>
-      </label>
-      <!-- <button class="btn" type="submit">Записаться</button> -->
+      <div class="popup__form-wrapper">
+        <span class="popup__form-name">Выберите дату и время вебинара:</span>
+        <label class="popup__form-label dropdown">
+          <button class="popup__form-select" type="button">
+            2022-12-05 18.00
+          </button>
+          <ul class="popup__form-selectlist">
+            <li class="popup__form-selectitem" data-value="2022-12-05 18.00">
+              2022-12-05 18.00
+            </li>
+            <li class="popup__form-selectitem" data-value="2022-13-05 18.00">
+              2022-13-05 18.00
+            </li>
+            <li class="popup__form-selectitem" data-value="2022-14-05 18.00">
+              2022-14-05 18.00
+            </li>
+          </ul>
+
+          <input class="selectlist-hidden" type="text" name="select-category" value="">
+        </label>
+      </div>
+      <button class="btn popup-introductory__btn" type="submit">Записаться</button>
     </form>
   </div>
 </div>
