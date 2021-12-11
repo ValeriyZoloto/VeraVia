@@ -17,9 +17,27 @@
 
 <body>
   <header class="header">
-    <a class="header__consultation open-popup" href="#">
-      Бесплатная консультация
-    </a>
+    <div class="header__link-wrapper">
+      <a class="header__consultation open-popup" href="#">
+        <div class="header__consultation-wrapper">
+          <span class="header__consultation-span">Бесплатная консультация</span>
+          <picture class="header__consultation-picture">
+            <source srcset="images/header/telephones.webp" type="image/webp">
+            <source srcset="images/header/telephones.png" type="image/png">
+            <img class="header__consultation-img" src="images/header/telephones.webp"
+              width="139" height="139" alt="Значек телефонной гарнитуры">
+          </picture>
+        </div>
+      </a>
+      <a class="header__call" href="tel:+82107526-9192 ">
+        <picture class="header__call-picture">
+          <source srcset="images/header/call.webp" type="image/webp">
+          <source srcset="images/header/call.png" type="image/png">
+          <img class="header__call-img" src="images/header/call.webp" width="139"
+            height="139" alt="Значек звонить">
+        </picture>
+      </a>
+    </div>
     <div class="container">
       <div class="header__top">
         <a href="#" class="logo header__logo">
@@ -30,7 +48,17 @@
               alt="Логотип Компании">
           </picture>
         </a>
-        <a class="header__tel" href="tel:+821075269192">+ 82 (10) 7526-9192 </a>
+        <a class="header__tel" href="tel:+821075269192">
+          <picture class="header__tel-picture">
+            <source srcset="images/header/tel.webp" type="image/webp">
+            <source srcset="images/header/tel.png" type="image/png">
+            <img class="header__tel-img" src=" images/header/tel.webp" width="25"
+              height="25" alt="Телефонная трубка">
+          </picture>
+          <span class="header__tel-span">
+            + 82 (10) 7526-9192
+          </span>
+        </a>
       </div>
       <div class="header__content">
         <span class="header__subtitle">Добро пожаловать в онлайн школу </span>

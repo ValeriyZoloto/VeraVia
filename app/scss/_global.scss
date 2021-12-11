@@ -58,10 +58,30 @@ a {
   -webkit-text-fill-color: transparent;
   margin-bottom: 18px;
   @include overflow($row);
+
+  //-----1578px-----
+  @include media-w($sxl) {
+    font-size: 90px;
+    line-height: 1.21;
+  }
+
+  //---860px---
+  @include media-w($sm) {
+    font-size: 70px;
+  }
 }
 
 .logo {
   display: block;
+
+  &__img {
+
+    //-----1578px-----
+    @include media-w($sxl) {
+      width: 195px;
+      height: 58px;
+    }
+  }
 }
 
 .btn {

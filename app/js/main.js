@@ -194,6 +194,7 @@ $(document).ready(function () {
 		if (validName == true && validTel == true && validEmail == true) {
 			$(".popup-introductory__form").unbind("submit").submit();
 			$(".popup-sucsses-bg").fadeIn(100);
+			$(".popup-introductory-bg").fadeOut(600);
 		} else {
 		}
 	});
