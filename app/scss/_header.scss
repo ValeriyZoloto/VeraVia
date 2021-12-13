@@ -38,6 +38,62 @@
     background-position: bottom -933px right 0px;
   }
 
+  //---620px---
+  @include media-w($sms) {
+    background-position: bottom -810px right 0px;
+  }
+
+  //---562px---
+  @include media-w($ssm) {
+    background-position: bottom -705px right 0px;
+  }
+
+  //---506px---
+  @include media-w($snm) {
+    background-position: bottom -577px right 0px;
+  }
+
+  //---500px---
+  @include media-w($smm) {
+    background-position: bottom -535px right 0px;
+  }
+
+  //---479px---
+  @include media-w($xss) {
+    background-position: bottom -493px right 0px;
+  }
+
+  //---450px---
+  @include media-w($xs) {
+    background-position: bottom -421px right 0px;
+  }
+
+  //---400px---
+  @include media-w($xxs) {
+    background-position: bottom -343px right 0px;
+  }
+
+  //---370px---
+  @include media-w($xxl) {
+    background-position: bottom -314px right 0px;
+  }
+
+  //---360px---
+  @include media-w($xbl) {
+    background-position: bottom -308px right 0px;
+  }
+
+  //---350px---
+  @include media-w($xxsl) {
+    background-position: bottom -285px right 0px;
+  }
+
+  //---330px---
+  @include media-w($xxsk) {
+    background-position: bottom -175px right 0px;
+  }
+
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -57,6 +113,11 @@
     //---700px---
     @include media-w($smz) {
       margin-bottom: 60px;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      margin-bottom: 41px;
     }
   }
 
@@ -78,10 +139,32 @@
     line-height: 1.22;
     margin-bottom: -2px;
     @include overflow($row);
+
+    //---400px---
+    @include media-w($xxs) {
+      font-size: 16px;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      margin: 0px 0px 7px -28px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      margin-left: 0px;
+    }
   }
 
   &__logo {
     position: relative;
+
+    //---768px---
+    @include media-w($smx) {
+      display: none;
+    }
 
     &::before {
       position: absolute;
@@ -106,9 +189,52 @@
     margin-top: -11px;
     transition: 0.5s;
 
+    &::before {
+      content: '';
+      position: absolute;
+      display: none;
+      width: 281px;
+      height: 1px;
+
+      //---700px---
+      @include media-w($smz) {
+        display: block;
+        top: 22px;
+        left: 22px;
+        background-image: url(../images/header/tel-lines.png);
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+      width: 226px;
+      height: 1px;
+
+      //---700px---
+      @include media-w($smz) {
+        display: block;
+        bottom: 22px;
+        left: 77px;
+        background-image: url(../images/header/tel-bottom-line.png);
+      }
+    }
+
     //---700px---
     @include media-w($smz) {
-      max-width: 37px;
+      position: relative;
+      max-width: 330px;
+      margin: -26px -15px 0px auto;
+      padding: 32px 89px 37px 20px;
+      background: linear-gradient(286.41deg, #0B4D69 3.63%, #104C54 90.98%);
+      box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.35);
+      border-radius: 0px 0px 0px 22px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      max-width: 300px;
     }
 
     &:focus {
@@ -131,9 +257,9 @@
     font-size: 18px;
     line-height: 1.22;
 
-    //---700px---
-    @include media-w($smz) {
-      display: none;
+    //---350px---
+    @include media-w($xxsl) {
+      font-size: 14px;
     }
   }
 
@@ -144,12 +270,49 @@
     //---700px---
     @include media-w($smz) {
       width: 37px;
-      height: 37px;
+      height: 35px;
     }
   }
 
   &__title {
     margin-bottom: 9px;
+
+    //-----1578px-----
+    @include media-w($sxl) {
+      font-size: 90px;
+      line-height: 1.21;
+    }
+
+    //---860px---
+    @include media-w($sm) {
+      font-size: 70px;
+    }
+
+    //---768px---
+    @include media-w($smx) {
+      font-size: 65px;
+    }
+
+    //---700px---
+    @include media-w($smz) {
+      font-size: 60px;
+    }
+
+    //---400px---
+    @include media-w($xxs) {
+      font-size: 51px;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      margin: 0px 0px 11px 16px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      margin: 0px 0px 11px 0px;
+      font-size: 47px;
+    }
   }
 
   &__text {
@@ -163,9 +326,21 @@
       margin-bottom: 70px;
     }
 
-    //---700px---
-    @include media-w($smz) {
-      // max-width: 380px;
+    //---400px---
+    @include media-w($xxs) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      margin: 0px 0px 55px 15px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      margin: 0px 0px 55px 0px;
+      font-size: 14px;
     }
   }
 
@@ -179,16 +354,68 @@
     @include media-w($lg) {
       margin-bottom: 258px;
     }
+
+    //---620px---
+    @include media-w($sms) {
+      max-width: 100%;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      max-width: 91%;
+      margin: 0px 0px 288px 15px;
+    }
   }
 
   &__guarantee-img {
     width: 71px;
     height: 71px;
+
+    //---620px---
+    @include media-w($sms) {
+      width: 49px;
+      height: 49px;
+    }
   }
 
   &__guarantee-content {
     width: 100%;
     max-width: 472px;
+
+    //---620px---
+    @include media-w($sms) {
+      max-width: 430px;
+    }
+
+    //---562px---
+    @include media-w($ssm) {
+      max-width: 390px;
+    }
+
+    //---506px---
+    @include media-w($snm) {
+      max-width: 330px;
+    }
+
+    //---479px---
+    @include media-w($xss) {
+      max-width: 300px;
+    }
+
+    //---400px---
+    @include media-w($xxs) {
+      max-width: 250px;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      max-width: 236px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      max-width: 225px;
+    }
   }
 
   &__guarantee-title {
@@ -196,6 +423,17 @@
     font-size: 18px;
     margin: 2px 0px 7px 0px;
     @include overflow($row);
+
+    //---620px---
+    @include media-w($sms) {
+      margin: 2px 0px 6px 0px;
+      font-size: 16px;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      margin: 2px 0px 8px 0px;
+    }
   }
 
   &__guarantee-text {
@@ -203,11 +441,35 @@
     font-size: 18px;
     line-height: 1.38;
     color: $blue;
+
+    //---620px---
+    @include media-w($sms) {
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    //---479px---
+    @include media-w($xss) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   &__btn {
     width: 479px;
     height: 60px;
+
+    //---620px---
+    @include media-w($sms) {
+      width: 100%;
+    }
+
+    //---450px---
+    @include media-w($xs) {
+      margin-left: 15px;
+      max-width: 300px;
+      padding: 13px 5px 23px 5px;
+    }
   }
 
   &__down {
@@ -262,6 +524,12 @@
     //-----1200px----
     @include media-w($lg) {
       top: 524px;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      top: 480px;
+      right: -76%;
     }
   }
 
@@ -319,6 +587,31 @@
     @include media-w($mdl) {
       width: 89px;
       height: 89px;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    //---700px---
+    @include media-w($smz) {
+      position: absolute;
+      right: 31px;
+      display: block;
+      border: none;
+      background: transparent;
+    }
+  }
+
+  &__svg {
+    display: none;
+
+    //---700px---
+    @include media-w($smz) {
+      display: block;
+      width: 21px;
+      height: 20px;
+      fill: $white;
     }
   }
 

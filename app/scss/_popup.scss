@@ -95,6 +95,16 @@
   transform: translate(-50%, -50%);
   z-index: 100;
 
+  //-----1200px----
+  @include media-w($lg) {
+    width: 750px;
+  }
+
+  //----992px----
+  @include media-w($mdl) {
+    width: 660px;
+  }
+
   &__form {
     padding: 65px 102px 84px 102px;
     display: flex;
@@ -103,6 +113,18 @@
     background: linear-gradient(286.41deg, #033958 3.63%, #0F6B78 90.98%);
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.53);
     border-radius: 20px;
+
+    //-----1200px----
+    @include media-w($lg) {
+      max-width: 750px;
+      padding: 55px 102px 74px 56px;
+    }
+
+    //----992px----
+    @include media-w($mdl) {
+      max-width: 660px;
+      padding: 55px 102px 74px 56px;
+    }
   }
 
   &__form-title {
@@ -113,6 +135,27 @@
     line-height: 1.21;
     text-transform: uppercase;
     color: $white;
+
+    &--desctop {
+      display: block;
+
+      //-----1200px----
+      @include media-w($lg) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      //-----1200px----
+      @include media-w($lg) {
+        max-width: 270px;
+        font-size: 22px;
+        line-height: 27px;
+        display: block;
+      }
+    }
 
     &--introductory {
       margin-bottom: 23px;
@@ -164,6 +207,11 @@
     padding-bottom: 23px;
     border-bottom: 1px solid rgba(73, 185, 232, 0.4);
     margin-bottom: 23px;
+
+    //---860px---
+    @include media-w($sm) {
+      border-bottom: none;
+    }
   }
 
   &__form-iconholder {
@@ -208,13 +256,25 @@
       position: absolute;
       width: 592px;
       height: 60px;
-      top: 0;
+      top: -22px;
       left: 0;
       bottom: 0;
       right: 0;
       background-image: url(../images/popup/input-border.png);
       background-repeat: no-repeat;
       background-size: cover;
+
+      //-----1200px----
+      @include media-w($lg) {
+        width: 100%;
+        top: -21px;
+      }
+
+      //----992px----
+      @include media-w($mdl) {
+        width: 100%;
+        top: -21px;
+      }
     }
   }
 
@@ -254,6 +314,8 @@
   }
 
   &__btn {
+    padding: 22px 15px 22px 15px;
+    margin-top: 30px;
     max-width: 427px;
   }
 }
@@ -507,4 +569,12 @@
 
 .selectlist-hidden {
   display: none;
+}
+
+.popup__form-wrapp {
+
+  //---860px---
+  @include media-w($sm) {
+    display: none;
+  }
 }
