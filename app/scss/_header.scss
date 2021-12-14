@@ -470,6 +470,12 @@
       max-width: 300px;
       padding: 13px 5px 23px 5px;
     }
+
+    //---360px---
+    @include media-w($xbl) {
+      margin-left: 0;
+
+    }
   }
 
   &__down {
@@ -533,7 +539,9 @@
     }
   }
 
-  &__consultation {}
+  &__consultation {
+    z-index: 99;
+  }
 
   &__consultation-span {
     display: block;
@@ -569,6 +577,7 @@
 
   &__call {
     display: none;
+    z-index: 99;
 
     //-----1578px-----
     @include media-w($sxl) {

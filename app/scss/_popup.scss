@@ -65,6 +65,18 @@
     background-image: url(../images/popup/succses-bg.png);
     @extend %bg-center-cover;
   }
+
+  //---768px---
+  @include media-w($smx) {
+    width: 302px;
+    height: 311px;
+  }
+
+  //---350px---
+  @include media-w($xxsl) {
+    width: 270px;
+    height: 311px;
+  }
 }
 
 .popup-errorname {
@@ -79,6 +91,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  //---768px---
+  @include media-w($smx) {
+    padding: 15px 23px 20px 19px;
+    width: 302px;
+    height: 259px;
+  }
+
+  //---360px---
+  @include media-w($xbl) {
+    width: 270px;
+  }
 }
 
 .error-btn {
@@ -105,6 +129,16 @@
     width: 660px;
   }
 
+  //---768px---
+  @include media-w($smx) {
+    width: 302px;
+  }
+
+  //---350px---
+  @include media-w($xxsl) {
+    width: 270px;
+  }
+
   &__form {
     padding: 65px 102px 84px 102px;
     display: flex;
@@ -125,6 +159,18 @@
       max-width: 660px;
       padding: 55px 102px 74px 56px;
     }
+
+    //---768px---
+    @include media-w($smx) {
+      max-width: 302px;
+      padding: 33px 17px 27px 27px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      max-width: 270px;
+      padding: 20px 10px 20px 10px;
+    }
   }
 
   &__form-title {
@@ -135,6 +181,22 @@
     line-height: 1.21;
     text-transform: uppercase;
     color: $white;
+
+    //----992px----
+    @include media-w($mdl) {
+      font-size: 28px;
+    }
+
+    //---768px---
+    @include media-w($smx) {
+      font-size: 22px;
+      line-height: 1.22;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      font-size: 20px;
+    }
 
     &--desctop {
       display: block;
@@ -150,10 +212,15 @@
 
       //-----1200px----
       @include media-w($lg) {
-        max-width: 270px;
+        max-width: 280px;
         font-size: 22px;
         line-height: 27px;
         display: block;
+      }
+
+      //---350px---
+      @include media-w($xxsl) {
+        font-size: 20px;
       }
     }
 
@@ -177,6 +244,35 @@
     display: flex;
     justify-content: center;
     max-width: 80px;
+
+    //---768px---
+    @include media-w($smx) {
+      max-width: 77px;
+      height: 122px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      max-width: 70px;
+    }
+
+    &:last-child {
+
+      //---768px---
+      @include media-w($smx) {
+        margin-top: 3px;
+        margin-right: 40px;
+      }
+    }
+
+    &:nth-child(4) {
+
+      //---768px---
+      @include media-w($smx) {
+        margin-top: 3px;
+        margin-left: 40px;
+      }
+    }
   }
 
   &__form-link {
@@ -211,6 +307,7 @@
     //---860px---
     @include media-w($sm) {
       border-bottom: none;
+      flex-wrap: wrap;
     }
   }
 
@@ -311,6 +408,16 @@
       letter-spacing: 0.1em;
       color: $white;
     }
+
+    //---768px---
+    @include media-w($smx) {
+      max-width: 247px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      max-width: 235px;
+    }
   }
 
   &__btn {
@@ -330,6 +437,21 @@
   height: 795px;
   background-color: transparent;
 
+  //----992px----
+  @include media-w($mdl) {
+    width: 500px;
+  }
+
+  //---768px---
+  @include media-w($smx) {
+    width: 302px;
+  }
+
+  //---350px---
+  @include media-w($xxsl) {
+    width: 270px;
+  }
+
   &__form {
     padding: 54px 83px 65px 79px;
     width: 590px;
@@ -338,12 +460,48 @@
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.53);
     border-radius: 20px;
 
+    //----992px----
+    @include media-w($mdl) {
+      padding: 40px 50px 40px 50px;
+      width: 500px;
+    }
+
+    //---768px---
+    @include media-w($smx) {
+      padding: 33px 2px 44px 28px;
+      width: 302px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      padding: 33px 5px 44px 15px;
+      width: 270px;
+    }
+
   }
 
   &__btn {
     margin-top: 145px;
     width: 100%;
     z-index: 1;
+
+    //----992px----
+    @include media-w($mdl) {
+      // margin-top: 33px;
+    }
+
+    //---768px---
+    @include media-w($smx) {
+      max-width: 247px;
+      font-size: 15px;
+      line-height: 1.2;
+      letter-spacing: 0.1em;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      max-width: 235px;
+    }
   }
 }
 
@@ -435,6 +593,16 @@
     letter-spacing: 0.1em;
     color: $white;
   }
+
+  //---768px---
+  @include media-w($smx) {
+    width: 247px;
+  }
+
+  //---350px---
+  @include media-w($xxsl) {
+    width: 235px;
+  }
 }
 
 .popup__form-label {
@@ -464,7 +632,23 @@
     background-image: url(../images/popup/input-border.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 9px;
     z-index: 1;
+
+    //----992px----
+    @include media-w($mdl) {
+      width: 399px;
+    }
+
+    //---768px---
+    @include media-w($smx) {
+      width: 247px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      width: 235px;
+    }
   }
 }
 
@@ -514,6 +698,11 @@
     @extend %bg-center-cover;
     pointer-events: none;
   }
+
+  //---768px---
+  @include media-w($smx) {
+    max-width: 247px;
+  }
 }
 
 //Отменяем стандартную стилизацию internet explorer
@@ -536,6 +725,11 @@
   z-index: 9;
   font-size: 16px;
   letter-spacing: 0.1em;
+
+  //---768px---
+  @include media-w($smx) {
+    max-width: 247px;
+  }
 }
 
 .popup__form-selectlist--visible {
@@ -564,6 +758,11 @@
   &:last-child {
     border-radius: 0px 0px 6px 6px;
     border-bottom: 1px solid $blue;
+  }
+
+  //---768px---
+  @include media-w($smx) {
+    max-width: 247px;
   }
 }
 
