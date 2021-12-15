@@ -1,16 +1,44 @@
 .footer {
+  position: relative;
   padding: 65px 0px 17px 0px;
   background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
+
+  //---768px---
+  @include media-w($smx) {
+    padding: 41px 0px 23px 0px;
+  }
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
+
+    //-----1440px-----
+    @include media-w($xl) {
+      flex-direction: column;
+    }
+
+    //---450px---
+    @include media-w($xs) {
+      align-items: flex-start;
+      margin-bottom: 51px;
+    }
   }
 
   &__logo {
-    // transform: rotate(180deg);
+
+    //-----1440px-----
+    @include media-w($xl) {
+      margin-left: -54px;
+      display: block;
+      margin-bottom: 32px;
+    }
+
+    //---450px---
+    @include media-w($xs) {
+      margin-left: 0px;
+    }
   }
 
 
@@ -18,11 +46,18 @@
 
   &__wrapper-top {
     width: 479px;
-    // width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+
+    //---768px---
+    @include media-w($smx) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      width: 100%;
+      margin-bottom: 33px;
+    }
   }
 
   &__wrapper-bottom {
@@ -32,6 +67,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    //-----1440px-----
+    @include media-w($xl) {
+      margin: 0 auto;
+    }
   }
 
   &__social-span {
@@ -41,6 +81,11 @@
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: $gray;
+
+    //---768px---
+    @include media-w($smx) {
+      display: none;
+    }
   }
 
   &__social-list {
@@ -49,6 +94,22 @@
     align-items: center;
     max-width: 200px;
     width: 100%;
+
+    //---768px---
+    @include media-w($smx) {
+      margin-left: -8px;
+      max-width: 234px;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      margin-left: -8px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      margin-left: 0;
+    }
   }
 
   &__social-link {
@@ -84,6 +145,12 @@
     text-align: right;
     transition: 0.5s;
 
+    //---768px---
+    @include media-w($smx) {
+      width: 233px;
+      margin-bottom: 6px;
+    }
+
     &:focus {
       text-decoration: underline;
     }
@@ -106,6 +173,16 @@
     width: 100%;
     text-align: right;
     transition: 0.5s;
+
+    //---768px---
+    @include media-w($smx) {
+      margin-bottom: 10px;
+    }
+
+    //---450px---
+    @include media-w($xs) {
+      max-width: 204px;
+    }
 
     &:focus {
       text-decoration: underline;
@@ -136,16 +213,17 @@
     width: 25px;
     height: 25px;
 
-    //---700px---
-    @include media-w($smz) {
-      width: 37px;
-      height: 35px;
-    }
   }
 
   &__copy {
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 11px;
+
+    //---450px---
+    @include media-w($xs) {
+      text-align: left;
+      margin-bottom: 11px;
+    }
   }
 
   &__copy-span {
@@ -153,6 +231,12 @@
     @extend %avenirNextCyr-Medium-450;
     font-size: 14px;
     line-height: 1.5;
+
+    //---370px---
+    @include media-w($xxl) {
+      font-size: 12px;
+      line-height: 1.75;
+    }
 
     &::before {
       content: '';
@@ -163,6 +247,11 @@
       width: 784px;
       height: 1px;
       background-color: rgba(0, 224, 255, 0.2);
+
+      //---768px---
+      @include media-w($smx) {
+        display: none;
+      }
     }
 
     &::after {
@@ -174,6 +263,113 @@
       width: 784px;
       height: 1px;
       background-color: rgba(0, 224, 255, 0.2);
+
+      //---768px---
+      @include media-w($smx) {
+        display: none;
+      }
+    }
+  }
+
+  &__logot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 285px;
+    width: 100%;
+    margin-left: auto;
+
+    //-----1440px-----
+    @include media-w($xl) {
+      margin: 0 auto;
+    }
+
+    //---450px---
+    @include media-w($xs) {
+      margin: 0px auto 0px 0px;
+      max-width: 223px;
+    }
+  }
+
+  &__logot-span {
+    @extend %avenirNextCyr-Demi600;
+    font-size: 10px;
+    line-height: 2.1;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $gray;
+
+    //---370px---
+    @include media-w($xxl) {
+      font-size: 8px;
+    }
+  }
+
+  &__logot-img {
+
+    //---370px---
+    @include media-w($xxl) {
+      width: 94px;
+      height: 28px;
+    }
+  }
+
+  &__scroll-up {
+    position: absolute;
+    top: -157px;
+    left: 96px;
+    border: none;
+    background-color: transparent;
+    transform: rotate(-90deg);
+    @extend %avenirNextCyr-Demi600;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    color: $blue;
+
+    //-----1730px-----
+    @include media-w($xxn) {
+      top: -81px;
+      left: 94%;
+    }
+
+    //-----1440px-----
+    @include media-w($xl) {
+      left: 87%;
+    }
+
+    //---768px---
+    @include media-w($smx) {
+      top: -95px;
+      left: 83%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 139px;
+      height: 139px;
+      top: -63px;
+      left: -136px;
+      background-image: url(../images/footer/arrow-up.png);
+      @extend %bg-center-cover;
+      transform: rotate(90deg);
+
+      //---768px---
+      @include media-w($smx) {
+        width: 91px;
+        height: 91px;
+      }
+    }
+  }
+
+  &__scroll-span {
+    display: block;
+
+    //-----1730px-----
+    @include media-w($xxn) {
+      display: none;
     }
   }
 }

@@ -97,3 +97,14 @@ a {
     0px 0px 24px #00E0FF;
   filter: blur(2px);
 }
+
+.section-title {
+  font-size: 54px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.blue {
+  color: $title-blue;
+}

@@ -1,0 +1,139 @@
+.causes {
+  position: relative;
+  padding: 124px 0px 121px 0px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(286.41deg, rgba(2, 35, 53, 0.8) 3.63%, rgba(12, 55, 61, 0.8) 90.98%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    box-shadow: 0px 3px 15px rgba(0, 224, 255, 0.93),
+      0px 4px 15px #4AD9EC,
+      0px 0px 24px #00E0FF;
+    filter: blur(2px);
+    z-index: -1;
+  }
+
+  &__section-title {
+    max-width: 525px;
+    margin-bottom: 58px;
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 20px;
+
+    &--one {
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 20px;
+    }
+
+    &--two {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    position: relative;
+    background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
+    border-radius: 20px;
+    border: 2px solid #49B9E8;
+
+    border-image: radial-gradient(47.54% 111.62% at 50% 50%, #49B9E8 0%, rgba(31, 77, 96, 0.43) 100%);
+    border-image-slice: 1;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      background: linear-gradient(180deg, rgba(0, 225, 255, 0.329) 0%, rgba(0, 225, 255, 0.349) 100%);
+
+      .causes__item-text {
+        color: $blue;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 41px;
+      height: 10px;
+      left: 42px;
+      bottom: 0px;
+      background: rgba(3, 225, 255, 0.66);
+      filter: blur(11px);
+    }
+
+    &:first-child {
+      padding: 36px 38px 35px 42px;
+    }
+
+    &:nth-child(2) {
+      padding: 39px 38px 35px 42px;
+    }
+
+    &:nth-child(3) {
+      padding: 36px 38px 35px 42px;
+    }
+
+    &:nth-child(4) {
+      padding: 32px 38px 50px 42px;
+    }
+
+    &--long {
+      &:first-child {
+        padding: 44px 40px 38px 42px;
+      }
+
+      &:nth-child(2) {
+        padding: 37px 18px 35px 42px;
+      }
+
+      &:last-child {
+        padding: 37px 40px 38px 42px;
+      }
+    }
+  }
+
+  &__svg {
+    &:first-child {
+      margin-bottom: 15px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 15px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 15px;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 19px;
+    }
+
+    &--long {
+      &:first-child {
+        margin-bottom: 12px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 19px;
+      }
+
+      &:last-child {
+        margin-bottom: 19px;
+      }
+    }
+  }
+
+  &__item-text {
+    @extend %avenirNextCyr-Medium-450;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+}
