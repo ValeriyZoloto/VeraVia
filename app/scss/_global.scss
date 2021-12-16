@@ -103,6 +103,58 @@ a {
   line-height: 1.22;
   text-transform: uppercase;
   color: $white;
+
+  //-----1230px----
+  @include media-w($xlf) {
+    font-size: 50px;
+    line-height: 1.23;
+  }
+
+  //---1050px----
+  @include media-w($md) {
+    font-size: 48px;
+  }
+
+  //----992px----
+  @include media-w($mdl) {
+    font-size: 46px;
+  }
+
+  //---768px---
+  @include media-w($smx) {
+    font-size: 42px;
+  }
+
+  //---620px---
+  @include media-w($sms) {
+    font-size: 40px;
+  }
+
+  //---562px---
+  @include media-w($ssm) {
+    font-size: 38px;
+  }
+
+  //---500px---
+  @include media-w($smm) {
+    font-size: 36px;
+  }
+
+  //---450px---
+  @include media-w($xs) {
+    font-size: 34px;
+  }
+
+  //---400px---
+  @include media-w($xxs) {
+    font-size: 32px;
+  }
+
+  //---370px---
+  @include media-w($xxl) {
+    font-size: 30px;
+  }
+
 }
 
 .blue {
