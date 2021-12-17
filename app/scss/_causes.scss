@@ -49,7 +49,7 @@
 
   //---370px---
   @include media-w($xxl) {
-    padding: 55px 0px 71px 0px;
+    padding: 55px 0px 44px 0px;
   }
 
   &::after {
@@ -70,7 +70,9 @@
 
   &__section-title {
     max-width: 525px;
-    margin-bottom: 58px;
+    margin-bottom: 52px;
+    margin-left: -5px;
+    @include overflow($row-2);
 
     //-----1230px----
     @include media-w($xlf) {
@@ -140,7 +142,7 @@
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 212px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     //-----1230px----
     @include media-w($xlf) {
@@ -259,7 +261,15 @@
     }
 
     &:first-child {
-      padding: 36px 38px 35px 42px;
+      padding: 37px 29px 35px 33px;
+
+      .causes__item-text {
+        line-height: 18px;
+      }
+
+      .causes__svg {
+        margin-left: 5px;
+      }
 
       //-----1230px----
       @include media-w($xlf) {
@@ -314,7 +324,11 @@
     }
 
     &:nth-child(2) {
-      padding: 39px 38px 35px 42px;
+      padding: 35px 30px 35px 38px;
+
+      .causes__item-text {
+        line-height: 18px;
+      }
 
       //-----1230px----
       @include media-w($xlf) {
@@ -368,7 +382,7 @@
     }
 
     &:nth-child(3) {
-      padding: 36px 38px 35px 42px;
+      padding: 36px 38px 35px 33px;
 
       //-----1230px----
       @include media-w($xlf) {
@@ -421,92 +435,32 @@
       }
     }
 
-    &:nth-child(4) {
-      padding: 32px 38px 50px 42px;
-
-      //-----1230px----
-      @include media-w($xlf) {
-        padding: 31px 38px 47px 40px;
-      }
-
-      //---1050px----
-      @include media-w($md) {
-        padding: 33px 36px 44px 37px;
-      }
-
-      //----992px----
-      @include media-w($mdl) {
-        padding: 29px 35px 41px 35px;
-      }
-
-      //---768px---
-      @include media-w($smx) {
-        padding: 28px 34px 38px 32px;
-      }
-
-      //---620px---
-      @include media-w($sms) {
-        padding: 27px 33px 35px 29px;
-      }
-
-      //---562px---
-      @include media-w($ssm) {
-        padding: 26px 32px 32px 27px;
-      }
-
-      //---500px---
-      @include media-w($smm) {
-        padding: 25px 31px 29px 25px;
-      }
-
-      //---450px---
-      @include media-w($xs) {
-        padding: 24px 28px 26px 22px;
-      }
-
-      //---400px---
-      @include media-w($xxs) {
-        padding: 23px 25px 23px 20px;
-      }
-
-      //---370px---
-      @include media-w($xxl) {
-        padding: 20px 24px 18px 17px;
-      }
-
-    }
-
-
-    &:nth-child(5) {
-      padding: 44px 40px 38px 42px;
-
-    }
-
-    &:nth-child(6) {
-      padding: 37px 18px 35px 42px;
-    }
 
     &:last-child {
-      padding: 37px 40px 38px 42px;
+      padding: 29px 40px 38px 35px;
+
+      .causes__svg--four {
+        margin-bottom: 13px;
+      }
 
       //-----1230px----
       @include media-w($xlf) {
-        padding: 35px 38px 36px 40px;
+        padding: 29px 38px 36px 40px;
       }
 
       //---1050px----
       @include media-w($md) {
-        padding: 34px 37px 34px 37px;
+        padding: 29px 37px 34px 37px;
       }
 
       //----992px----
       @include media-w($mdl) {
-        padding: 32px 35px 32px 35px;
+        padding: 29px 35px 32px 35px;
       }
 
       //---768px---
       @include media-w($smx) {
-        padding: 30px 34px 30px 32px;
+        padding: 29px 34px 30px 32px;
       }
 
       //---620px---
@@ -572,16 +526,16 @@
     }
 
     &:first-child {
-      padding: 44px 40px 38px 42px;
+      padding: 48px 40px 38px 36px;
 
       //-----1230px----
       @include media-w($xlf) {
-        padding: 41px 40px 38px 40px;
+        padding: 48px 40px 38px 36px;
       }
 
       //---1050px----
       @include media-w($md) {
-        padding: 39px 39px 37px 38px;
+        padding: 48px 39px 37px 36px;
       }
 
       //----992px----
@@ -626,7 +580,7 @@
     }
 
     &:nth-child(2) {
-      padding: 37px 18px 35px 42px;
+      padding: 37px 18px 35px 33px;
 
       //-----1230px----
       @include media-w($xlf) {
@@ -759,7 +713,7 @@
   }
 
   .causes__svg--six {
-    margin-bottom: 19px;
+    margin-bottom: 12px;
 
     //---370px---
     @include media-w($xxl) {
@@ -784,6 +738,7 @@
     @extend %avenirNextCyr-Medium-450;
     font-size: 15px;
     line-height: 1.2;
+    @include overflow($row-4);
   }
 
 }

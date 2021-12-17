@@ -11,6 +11,11 @@ $white: #ffffff;
 $row: 1;
 $row-2:2;
 $row-3:3;
+$row-4:4;
+$row-5:5;
+$row-6:6;
+$row-7:7;
+$row-9:9;
 $row-10:10;
 /*::::::::::::::::::::::::::переменные-finish:::::::::::::::::::::::::::::::::::*/
 /*::::::::::::::::::::::::::mixins::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -26,6 +31,12 @@ $row-10:10;
 /*::::::::::::::::::::::::::обои::::::::::::::::::::::::::::::::::::::::::::::::*/
 %bg-left {
   background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+%bg-right {
+  background-position: right center;
   background-size: cover;
   background-repeat: no-repeat;
 }
