@@ -1,0 +1,300 @@
+.why {
+  position: relative;
+  padding: 102px 0px 116px 0px;
+  background-image: url(../images/why/why-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 6px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/why/background-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+
+    //---400px---
+    @include media-w($xxs) {
+      display: block;
+    }
+  }
+
+  //-----1730px-----
+  @include media-w($xxn) {
+    background-position: bottom 0px right -106px;
+  }
+
+  //-----1578px-----
+  @include media-w($sxl) {
+    background-position: bottom 0px right -189px;
+  }
+
+  //-----1440px-----
+  @include media-w($xl) {
+    background-position: bottom 0px right -220px;
+  }
+
+  //-----1300px-----
+  @include media-w($sxla) {
+    background-image: none;
+  }
+
+  //---400px---
+  @include media-w($xxs) {
+    padding: 65px 0px 76px 0px;
+    background-image: url(../images/why/why-bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom -134px right 0px;
+  }
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/why/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+
+  &__inner {
+    margin-left: -4px;
+
+    //---370px---
+    @include media-w($xxl) {
+      margin-left: 11px;
+    }
+  }
+
+  &__section-title {
+    max-width: 871px;
+    margin-bottom: 44px;
+
+    //---370px---
+    @include media-w($xxl) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    margin-right: auto;
+    margin-bottom: 46px;
+
+    //---400px---
+    @include media-w($xxs) {
+      margin-bottom: 266px;
+    }
+  }
+
+  &__item {
+    &:first-child {
+      height: 36px;
+      max-width: 627px;
+      margin-bottom: 29px;
+
+      //---370px---
+      @include media-w($xxl) {
+        max-width: 300px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &:nth-child(2) {
+      max-width: 627px;
+      margin-bottom: 26px;
+
+      //---370px---
+      @include media-w($xxl) {
+        max-width: 300px;
+        margin-bottom: 17px;
+      }
+    }
+
+    &:nth-child(3) {
+      max-width: 690px;
+      margin-bottom: 52px;
+
+      //---370px---
+      @include media-w($xxl) {
+        max-width: 300px;
+        margin-bottom: 17px;
+      }
+    }
+
+    &:nth-child(4) {
+      max-width: 627px;
+      margin-bottom: 26px;
+
+      //---370px---
+      @include media-w($xxl) {
+        max-width: 300px;
+        margin-bottom: 17px;
+      }
+    }
+
+    &:last-child {
+      max-width: 666px;
+
+      //---370px---
+      @include media-w($xxl) {
+        max-width: 300px;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.5s;
+
+    ::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 25px;
+      width: 41px;
+      height: 10px;
+      background: rgba(3, 225, 255, 0.53);
+      filter: blur(11px);
+      z-index: 1;
+    }
+
+    &:hover {
+      .why__svg--blue {
+        display: none;
+      }
+
+      .why__svg--white {
+        display: block;
+      }
+
+      .why__text {
+        color: $blue;
+      }
+    }
+
+    // &--one {
+    //   &:hover {
+    //     .why__svg--blue {
+    //       display: none;
+    //     }
+
+    //     .why__svg--white {
+    //       display: block;
+    //     }
+
+    //     .why__text {
+    //       color: $blue;
+    //     }
+    //   }
+    // }
+  }
+
+  &__svg-holder {
+    margin-top: -10px;
+    display: block;
+    margin-right: 21px;
+
+    //---370px---
+    @include media-w($xxl) {
+      margin-top: -2px;
+      margin-right: 14px;
+    }
+  }
+
+  &__svg {
+    width: 36px;
+    height: 36px;
+
+    //---370px---
+    @include media-w($xxl) {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--white {
+      display: none;
+
+      //---370px---
+      @include media-w($xxl) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &--blue {
+      width: 36px;
+      height: 36px;
+
+      //---370px---
+      @include media-w($xxl) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &__text {
+    width: 100%;
+    @extend %avenirNextCyr-Medium-450;
+    font-size: 16px;
+    line-height: 1.44;
+    z-index: 2;
+
+    //---370px---
+    @include media-w($xxl) {
+      font-size: 14px;
+      line-height: 1.43;
+    }
+
+    &--one {
+      max-width: 570px;
+    }
+
+    &--three {
+      max-width: 633px;
+    }
+
+    &--last {
+      max-width: 609px;
+    }
+  }
+
+  &__btn {
+    width: 479px;
+
+    //---768px---
+    @include media-w($smx) {
+      width: 100%;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      padding-top: 14px;
+      margin: 0 auto;
+      width: 300px;
+      height: 60px;
+      margin-left: 3px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
