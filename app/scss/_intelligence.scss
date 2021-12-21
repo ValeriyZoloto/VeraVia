@@ -249,16 +249,29 @@
     height: 33px;
   }
 
-  &__svg--blue {
+  &__svg {
     display: block;
     width: 33px;
     height: 33px;
+    fill: #3B768F;
+
   }
 
   &__link {
     display: flex;
     transition: 0.5s;
     max-width: 692px;
+    transition: 0.5s;
+
+    &:hover {
+      .intelligence__svg {
+        fill: $blue;
+      }
+
+      .intelligence__text {
+        color: $blue;
+      }
+    }
 
     &--one {
       max-width: 692px;
@@ -309,20 +322,6 @@
         @include media-w($xlf) {
           @include overflow($row-4);
         }
-      }
-    }
-
-    &:hover {
-      .intelligence__text {
-        color: $blue;
-      }
-
-      .intelligence__svg--white {
-        display: block;
-      }
-
-      .intelligence__svg--blue {
-        display: none;
       }
     }
   }

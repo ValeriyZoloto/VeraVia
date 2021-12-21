@@ -1,6 +1,6 @@
 .why {
   position: relative;
-  padding: 102px 0px 116px 0px;
+  padding: 104px 0px 106px 0px;
   background-image: url(../images/why/why-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@
     &:first-child {
       height: 36px;
       max-width: 627px;
-      margin-bottom: 29px;
+      margin-bottom: 23px;
 
       //---370px---
       @include media-w($xxl) {
@@ -159,7 +159,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    transition: 0.5s;
+    transition: all 0.5s;
 
     ::before {
       content: '';
@@ -174,34 +174,15 @@
     }
 
     &:hover {
-      .why__svg--blue {
-        display: none;
-      }
 
-      .why__svg--white {
-        display: block;
+      .why__svg {
+        fill: $blue;
       }
 
       .why__text {
         color: $blue;
       }
     }
-
-    // &--one {
-    //   &:hover {
-    //     .why__svg--blue {
-    //       display: none;
-    //     }
-
-    //     .why__svg--white {
-    //       display: block;
-    //     }
-
-    //     .why__text {
-    //       color: $blue;
-    //     }
-    //   }
-    // }
   }
 
   &__svg-holder {
@@ -219,6 +200,7 @@
   &__svg {
     width: 36px;
     height: 36px;
+    fill: #3B768F;
 
     //---370px---
     @include media-w($xxl) {
