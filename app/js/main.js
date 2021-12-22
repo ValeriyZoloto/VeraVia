@@ -43,6 +43,19 @@ $(function () {
 	$(".popup-introductory__form").on("click", function (e) {
 		e.stopPropagation();
 	});
+
+	//Табы:::::::::
+	$(".course-tabs__name-item").on("click", function (e) {
+		e.preventDefault();
+		$(".course-tabs__name-item").removeClass(
+			"course-tabs__name-item--active"
+		);
+		$(this).addClass("course-tabs__name-item--active");
+		$(".course-tabs__content-item").removeClass(
+			"course-tabs__content-item--active"
+		);
+		$($(this).attr("href")).addClass("course-tabs__content-item--active");
+	});
 	//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 	//Стилизация select
