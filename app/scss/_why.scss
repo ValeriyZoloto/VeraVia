@@ -46,11 +46,11 @@
 
   //---400px---
   @include media-w($xxs) {
-    padding: 65px 0px 76px 0px;
+    padding: 64px 0px 76px 0px;
     background-image: url(../images/why/why-bg-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom -134px right 0px;
+    background-position: bottom -138px right 0px;
   }
 
 
@@ -74,7 +74,7 @@
 
     //---370px---
     @include media-w($xxl) {
-      margin-left: 11px;
+      margin-left: 12px;
     }
   }
 
@@ -84,7 +84,7 @@
 
     //---370px---
     @include media-w($xxl) {
-      margin-bottom: 30px;
+      margin-bottom: 31px;
     }
   }
 
@@ -107,7 +107,7 @@
       //---370px---
       @include media-w($xxl) {
         max-width: 300px;
-        margin-bottom: 20px;
+        margin-bottom: 23px;
       }
     }
 

@@ -1,0 +1,208 @@
+.author {
+  position: relative;
+  padding: 94px 0px 103px 0px;
+  background-image: url(../images/author/author-bg-cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom 0px right 6px;
+
+  //-----1730px-----
+  @include media-w($xxn) {
+    background-position: bottom 0px right -100px;
+  }
+
+  //-----1440px-----
+  @include media-w($xl) {
+    background-position: bottom 0px right -250px;
+  }
+
+  //-----1200px----
+  @include media-w($lg) {
+    background-position: bottom 0px right -380px;
+  }
+
+  //---1050px----
+  @include media-w($md) {
+    background-position: bottom 0px right -455px;
+  }
+
+  //----992px----
+  @include media-w($mdl) {
+    background-image: none;
+  }
+
+  //---768px---
+  @include media-w($smx) {
+    background-image: url(../images/author/author-bg-mobile.png);
+    background-position: bottom -606px right 0px;
+  }
+
+  //---700px---
+  @include media-w($smz) {
+    background-position: bottom -498px right 0px;
+  }
+
+  //---620px---
+  @include media-w($sms) {
+    background-position: bottom -389px right 0px;
+  }
+
+  //---562px---
+  @include media-w($ssm) {
+    background-position: bottom -297px right 0px;
+  }
+
+  //---506px---
+  @include media-w($snm) {
+    background-position: bottom -212px right 0px;
+  }
+
+  //---479px---
+  @include media-w($xss) {
+    background-position: bottom -143px right 0px;
+  }
+
+  //---450px---
+  @include media-w($xs) {
+    background-position: bottom -102px right 0px;
+  }
+
+  //---400px---
+  @include media-w($xxs) {
+    background-position: bottom -93px right 0px;
+  }
+
+  //---370px---
+  @include media-w($xxl) {
+    padding: 66px 0px 1px 0px;
+    background-position: bottom -98px right 0px;
+  }
+
+  //---360px---
+  @include media-w($xbl) {
+    background-position: bottom -85px right 0px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
+    z-index: -1;
+  }
+
+  &__inner {
+    margin-left: -6px;
+
+    //---370px---
+    @include media-w($xxl) {
+      margin-left: 17px;
+    }
+  }
+
+  &__section-title {
+    margin-bottom: 41px;
+
+    //---370px---
+    @include media-w($xxl) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__content {
+
+    //---768px---
+    @include media-w($smx) {
+      margin-bottom: 428px;
+    }
+
+  }
+
+  &__item {
+    @extend %avenirNextCyr-Medium-450;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 500px;
+
+    //---370px---
+    @include media-w($xxl) {
+      max-width: 330px;
+      line-height: 1.71;
+    }
+
+    & span {
+      display: block;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 27px;
+
+    //---370px---
+    @include media-w($xxl) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    right: 556px;
+    bottom: 96px;
+
+    //-----1730px-----
+    @include media-w($xxn) {
+      right: 445px;
+    }
+
+    //-----1440px-----
+    @include media-w($xl) {
+      right: 300px;
+    }
+
+    //-----1200px----
+    @include media-w($lg) {
+      right: 152px;
+    }
+
+    //---1050px----
+    @include media-w($md) {
+      right: 82px;
+    }
+
+    //---370px---
+    @include media-w($xxl) {
+      bottom: 48px;
+      right: 40px;
+    }
+  }
+
+  &__name {
+    @extend %avenirNextCyr-700;
+    font-size: 24px;
+    line-height: 20px;
+    color: $blue;
+    margin-bottom: 7px;
+
+    //---370px---
+    @include media-w($xxl) {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 2px;
+    }
+  }
+
+  &__position {
+    @extend %avenirNextCyr-Medium-450;
+    font-size: 14px;
+    line-height: 1.43;
+
+    //---370px---
+    @include media-w($xxl) {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}

@@ -62,8 +62,16 @@
 
     //---370px---
     @include media-w($xxl) {
-
+      padding: 12px 5px 12px 5px;
+      margin-left: -2px;
       width: 300px;
+      height: 60px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      width: 100%;
+      margin: 0 auto;
     }
   }
 
@@ -76,6 +84,7 @@
   //---370px---
   @include media-w($xxl) {
     padding-top: 39px;
+    margin-bottom: 42px;
   }
 
   &__name-item {
@@ -89,7 +98,7 @@
 
     //---500px---
     @include media-w($smm) {
-      padding: 7px 20px 9px 42px;
+      padding: 7px 24px 9px 42px;
       margin-bottom: 26px;
     }
 
@@ -133,6 +142,25 @@
     }
   }
 
+  &__name-wrapper {
+
+    &--two {
+
+      //---500px---
+      @include media-w($smm) {
+        margin-top: -31px;
+      }
+    }
+
+    &--three {
+
+      //---500px---
+      @include media-w($smm) {
+        margin-top: -4px;
+      }
+    }
+  }
+
   &__name-name {
     @extend %avenirNextCyr-700;
     font-weight: 750;
@@ -145,7 +173,6 @@
       display: block;
       margin-bottom: 2px;
     }
-
   }
 
   &__name-blue {
@@ -228,6 +255,7 @@
       position: relative;
 
       &::after {
+        pointer-events: none;
         content: '';
         position: absolute;
         bottom: 0;
@@ -426,5 +454,49 @@
   //---500px---
   @include media-w($smm) {
     display: none;
+  }
+}
+
+.course-tabs__name-content--two {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #00E0FF 0%, #4A8BEC 100%);
+    box-shadow: 0px 4px 8px rgba(0, 224, 255, 0.56);
+
+    //---500px---
+    @include media-w($smm) {
+      top: 16%;
+    }
+  }
+}
+
+.course-tabs__name-content--three {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #00E0FF 0%, #4A8BEC 100%);
+    box-shadow: 0px 4px 8px rgba(0, 224, 255, 0.56);
+
+    //---500px---
+    @include media-w($smm) {
+      top: 23%;
+    }
   }
 }
