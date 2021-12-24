@@ -1,0 +1,263 @@
+.adt {
+  position: relative;
+  padding: 99px 0px 84px 0px;
+  background: linear-gradient(286.41deg, rgba(2, 35, 53, 0.8) 3.63%, rgba(12, 55, 61, 0.8) 90.98%);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+
+  //---768px---
+  @include media-w($smx) {
+    padding: 56px 0px 110px 0px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(286.41deg, rgba(2, 35, 53, 0.8) 3.63%, rgba(12, 55, 61, 0.8) 90.98%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  &__wrapper {
+    margin-left: -5px;
+
+    //---768px---
+    @include media-w($smx) {
+      position: relative;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 45px;
+  }
+
+  &__section-title {}
+
+  &__button {
+    width: 213px;
+    height: 60px;
+    border: 1px solid #00E0FF;
+    background-color: transparent;
+    box-shadow: 0px 7px 20px -7px #00E0FF;
+    border-radius: 9px;
+    @extend %avenirNextCyr-700;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: $title-blue;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #022335;
+      font-size: 13px;
+      letter-spacing: 0.15em;
+    }
+
+    //---768px---
+    @include media-w($smx) {
+      position: absolute;
+      bottom: -56px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 180px;
+      height: 30px;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__buttom {
+    position: relative;
+    margin-right: -36%;
+  }
+}
+
+.adt-slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 32px;
+    top: 0;
+    width: 387px;
+    height: 402px;
+    background-color: rgba(8, 38, 43, .5);
+    opacity: 0.3;
+    z-index: 1;
+
+    //----992px----
+    @include media-w($mdl) {
+      display: none;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    max-width: 387px;
+    margin-right: 20px;
+
+    //---860px---
+    @include media-w($sm) {
+      max-width: 299px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 156px;
+      left: 42px;
+      width: 41px;
+      height: 10px;
+      background: rgba(3, 225, 255, 0.66);
+      filter: blur(11px);
+    }
+
+  }
+
+  &__picture {
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: 29px;
+    object-fit: cover;
+    border-radius: 20px;
+
+    //---860px---
+    @include media-w($sm) {
+      height: 185px
+    }
+  }
+
+  &__title {
+    @extend %avenirNextCyr-700;
+    font-size: 16px;
+    line-height: 1.31;
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    position: relative;
+    height: 66px;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 9px;
+
+    &::after {
+      pointer-events: none;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background-color: rgba(8, 38, 43, .5);
+    }
+
+    & span {
+      display: block;
+    }
+  }
+
+  &__link {
+    @extend %avenirNextCyr-Medium-450;
+    font-size: 12px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #4ABCEC;
+    transition: 0.5s;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__data {
+    display: block;
+    @extend %avenirNextCyr-Demi600;
+    font-size: 12px;
+    line-height: 1.75;
+    text-align: right;
+    padding-left: 7px;
+  }
+
+  &__svg {
+    width: 9px;
+    height: 9px;
+    fill: $white;
+  }
+
+  &__arrow {}
+
+  .slick-arrow {
+    position: absolute;
+    top: 87px;
+    width: 62px;
+    height: 62px;
+    z-index: 2;
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    //---860px---
+    @include media-w($sm) {
+      top: 61px;
+    }
+  }
+
+  .slick-next {
+    left: 12px;
+    transform: rotate(-180deg);
+  }
+
+  .slick-prev {
+    top: 79px;
+    right: 480px;
+
+    //----992px----
+    @include media-w($mdl) {
+      right: 365px;
+    }
+
+    //---860px---
+    @include media-w($sm) {
+      right: 317px;
+      top: 61px;
+    }
+
+    //---768px---
+    @include media-w($smx) {
+      right: 285px;
+    }
+
+    //---620px---
+    @include media-w($sms) {
+      right: 231px;
+    }
+  }
+
+}

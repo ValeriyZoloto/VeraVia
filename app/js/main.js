@@ -56,6 +56,55 @@ $(function () {
 		);
 		$($(this).attr("href")).addClass("course-tabs__content-item--active");
 	});
+	//Слайдеры 1-Adt-slider:::::::::::::::::::::::::::::::::::::::::::::::::
+	$(".adt-slider").slick({
+		dots: false,
+		slidesToShow: 4,
+		// variableWidth: true,
+		prevArrow:
+			'<button type="button" class="slick-prev"><svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_177_2210)"><circle r="31" transform="matrix(-1 0 0 1 44 37)" fill="url(#paint0_linear_177_2210)" shape-rendering="crispEdges"/></g><path d="M55.5303 36.4697C55.8232 36.7626 55.8232 37.2374 55.5303 37.5303L50.7574 42.3033C50.4645 42.5962 49.9896 42.5962 49.6967 42.3033C49.4038 42.0104 49.4038 41.5355 49.6967 41.2426L53.9393 37L49.6967 32.7574C49.4038 32.4645 49.4038 31.9896 49.6967 31.6967C49.9896 31.4038 50.4645 31.4038 50.7574 31.6967L55.5303 36.4697ZM34 36.25H55V37.75H34V36.25Z" fill="white"/><defs><filter id="filter0_d_177_2210" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feMorphology radius="7" operator="erode" in="SourceAlpha" result="effect1_dropShadow_177_2210"/><feOffset dy="7"/><feGaussianBlur stdDeviation="10"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.88 0 0 0 0 1 0 0 0 1 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_2210"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_2210" result="shape"/></filter><linearGradient id="paint0_linear_177_2210" x1="31" y1="0" x2="31" y2="62" gradientUnits="userSpaceOnUse"><stop stop-color="#03E1FF" stop-opacity="0.66"/><stop offset="1" stop-color="#13CDC2"/></linearGradient></defs></svg></button>',
+
+		nextArrow:
+			'<button type="button" class="slick-nex"><svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg"><circle opacity="0.7" cx="31" cy="31" r="31" fill="#08262B"/><path d="M19.4697 30.4697C19.1768 30.7626 19.1768 31.2374 19.4697 31.5303L24.2426 36.3033C24.5355 36.5962 25.0104 36.5962 25.3033 36.3033C25.5962 36.0104 25.5962 35.5355 25.3033 35.2426L21.0607 31L25.3033 26.7574C25.5962 26.4645 25.5962 25.9896 25.3033 25.6967C25.0104 25.4038 24.5355 25.4038 24.2426 25.6967L19.4697 30.4697ZM41 30.25L20 30.25V31.75L41 31.75V30.25Z" fill="white"/></svg></button>',
+		responsive: [
+			{
+				breakpoint: 1272,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true,
+					variableWidth: false,
+				},
+			},
+			{
+				breakpoint: 932,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					infinite: true,
+					variableWidth: true,
+				},
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					variableWidth: true,
+				},
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					variableWidth: false,
+				},
+			},
+		],
+	});
 	//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 	//Стилизация select
