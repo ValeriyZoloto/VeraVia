@@ -1,10 +1,10 @@
 .author {
   position: relative;
-  padding: 97px 0px 85px 0px;
+  padding: 98px 0px 108px 0px;
   background-image: url(../images/author/author-bg-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom -3px right -1px;
+  background-position: bottom -3px right 5px;
 
   //-----1730px-----
   @include media-w($xxn) {
@@ -95,7 +95,7 @@
   }
 
   &__inner {
-    margin-left: 0px;
+    margin-left: -5px;
 
     //---370px---
     @include media-w($xxl) {
@@ -134,12 +134,12 @@
     }
 
     & span {
-      display: block;
+      display: inline-block;
     }
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 27px;
+    margin-bottom: 29px;
 
     //---370px---
     @include media-w($xxl) {
@@ -149,8 +149,8 @@
 
   &__wrapper {
     position: absolute;
-    right: 546px;
-    bottom: 92px;
+    right: 557px;
+    bottom: 97px;
 
     //-----1730px-----
     @include media-w($xxn) {
@@ -203,6 +203,24 @@
     @include media-w($xxl) {
       font-size: 12px;
       line-height: 20px;
+    }
+  }
+
+  &__mobile {
+    display: inline;
+
+    //---370px---
+    @include media-w($xxl) {
+      display: block;
+    }
+  }
+
+  .author__mobile--not {
+
+
+    //---370px---
+    @include media-w($xxl) {
+      display: inline;
     }
   }
 }

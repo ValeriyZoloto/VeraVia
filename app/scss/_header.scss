@@ -363,7 +363,7 @@
     //---370px---
     @include media-w($xxl) {
       max-width: 91%;
-      margin: 0px 0px 288px 15px;
+      margin: 0px 0px 292px 15px;
     }
   }
 
@@ -451,7 +451,15 @@
     //---479px---
     @include media-w($xss) {
       font-size: 14px;
-      line-height: 22px;
+      line-height: 21px;
+    }
+
+    & span {
+
+      //---370px---
+      @include media-w($xxl) {
+        display: block;
+      }
     }
   }
 
@@ -605,7 +613,7 @@
     //---700px---
     @include media-w($smz) {
       position: absolute;
-      right: 31px;
+      right: 26px;
       display: block;
       border: none;
       background: transparent;

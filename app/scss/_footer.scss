@@ -39,10 +39,26 @@
     @include media-w($xs) {
       margin-left: 0px;
     }
+
+    //---370px---
+    @include media-w($xxl) {
+      margin-left: 16px;
+    }
+
+    //---350px---
+    @include media-w($xxsl) {
+      margin-left: 0;
+    }
   }
 
 
-  &__wrapper {}
+  &__wrapper {
+
+    //---370px---
+    @include media-w($xxl) {
+      padding-left: 16px;
+    }
+  }
 
   &__wrapper-top {
     width: 479px;
@@ -224,6 +240,11 @@
       text-align: left;
       margin-bottom: 11px;
     }
+
+    //---370px---
+    @include media-w($xxl) {
+      padding-left: 16px;
+    }
   }
 
   &__copy-span {
@@ -289,6 +310,11 @@
       margin: 0px auto 0px 0px;
       max-width: 223px;
     }
+
+    //---370px---
+    @include media-w($xxl) {
+      margin: 0px auto 0px 16px;
+    }
   }
 
   &__logot-span {
@@ -350,7 +376,7 @@
       position: absolute;
       width: 139px;
       height: 139px;
-      top: -63px;
+      top: -47px;
       left: -136px;
       background-image: url(../images/footer/arrow-up.png);
       @extend %bg-center-cover;

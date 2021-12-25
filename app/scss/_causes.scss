@@ -49,7 +49,7 @@
 
   //---370px---
   @include media-w($xxl) {
-    padding: 55px 0px 44px 0px;
+    padding: 55px 0px 70px 0px;
   }
 
   &::after {
@@ -127,7 +127,7 @@
     @include media-w($xxl) {
       margin-left: 14px;
       max-width: 301px;
-      margin-bottom: 33px;
+      margin-bottom: 32px;
     }
 
     //---350px---
@@ -194,9 +194,9 @@
     //---370px---
     @include media-w($xxl) {
       grid-gap: 17px;
-      padding-left: 16px;
+      padding-left: 17px;
       grid-template-rows: 139px;
-      margin-bottom: 17px;
+      margin-bottom: 19px;
     }
 
     //---350px---
@@ -258,6 +258,11 @@
       bottom: 0px;
       background: rgba(3, 225, 255, 0.66);
       filter: blur(11px);
+
+      //---370px---
+      @include media-w($xxl) {
+        left: 15px;
+      }
     }
 
     &:first-child {
@@ -269,6 +274,14 @@
 
       .causes__svg {
         margin-left: 5px;
+
+        //---370px---
+        @include media-w($xxl) {
+          width: 40px;
+          height: 35px;
+          margin-left: 0;
+          margin-bottom: 6px;
+        }
       }
 
       //-----1230px----
@@ -318,13 +331,33 @@
 
       //---370px---
       @include media-w($xxl) {
-        padding: 15px 28px 20px 18px;
+        padding: 15px 28px 20px 15px;
+        width: 301px;
       }
 
     }
 
     &:nth-child(2) {
       padding: 35px 30px 35px 38px;
+
+      & span {
+
+        //---370px---
+        @include media-w($xxl) {
+          display: block;
+        }
+      }
+
+      .causes__svg {
+
+        //---370px---
+        @include media-w($xxl) {
+          width: 40px;
+          height: 35px;
+          margin-left: 0;
+          margin-bottom: 7px;
+        }
+      }
 
       .causes__item-text {
         line-height: 18px;
@@ -377,12 +410,26 @@
 
       //---370px---
       @include media-w($xxl) {
-        padding: 18px 27px 17px 17px;
+        height: 145px;
+        width: 301px;
+        padding: 20px 27px 17px 13px;
+        margin-bottom: 6px;
       }
     }
 
     &:nth-child(3) {
       padding: 36px 38px 35px 33px;
+
+      .causes__svg {
+
+        //---370px---
+        @include media-w($xxl) {
+          width: 40px;
+          height: 35px;
+          margin-left: 0;
+          margin-bottom: 4px;
+        }
+      }
 
       //-----1230px----
       @include media-w($xlf) {
@@ -431,16 +478,26 @@
 
       //---370px---
       @include media-w($xxl) {
-        padding: 16px 24px 14px 18px;
+        margin-top: -1px;
+        height: 130px;
+        width: 301px;
+        padding: 16px 24px 14px 13px;
       }
     }
-
 
     &:last-child {
       padding: 29px 40px 38px 35px;
 
       .causes__svg--four {
         margin-bottom: 13px;
+
+        //---370px---
+        @include media-w($xxl) {
+          width: 40px;
+          height: 35px;
+          margin-left: 0;
+          margin-bottom: 15px;
+        }
       }
 
       //-----1230px----
@@ -490,7 +547,9 @@
 
       //---370px---
       @include media-w($xxl) {
-        padding: 20px 24px 18px 17px;
+        margin-top: 3px;
+        padding: 20px 24px 18px 11px;
+        width: 301px;
       }
     }
   }
@@ -575,7 +634,17 @@
 
       //---370px---
       @include media-w($xxl) {
-        padding: 17px 17px 22px 18px;
+        height: 143px;
+        width: 301px;
+        padding: 12px 17px 19px 13px;
+      }
+
+      .causes__item-text {
+
+        //---370px---
+        @include media-w($xxl) {
+          line-height: 19px;
+        }
       }
     }
 
@@ -629,7 +698,18 @@
 
       //---370px---
       @include media-w($xxl) {
-        padding: 20px 17px 23px 17px;
+        margin-top: -7px;
+        width: 301px;
+        height: 186px;
+        padding: 17px 17px 23px 14px;
+      }
+
+      .causes__item-text {
+
+        //---370px---
+        @include media-w($xxl) {
+          line-height: 18px;
+        }
       }
     }
 
@@ -683,7 +763,18 @@
 
       //---370px---
       @include media-w($xxl) {
+        margin-top: 2px;
+        height: 138px;
+        width: 301px;
         padding: 13px 27px 13px 17px;
+      }
+    }
+
+    .causes__item-text {
+
+      //---370px---
+      @include media-w($xxl) {
+        line-height: 18px;
       }
     }
   }
@@ -709,6 +800,7 @@
     @include media-w($xxl) {
       width: 41px;
       height: 41px;
+      margin-bottom: 7px;
     }
   }
 
@@ -717,7 +809,7 @@
 
     //---370px---
     @include media-w($xxl) {
-      margin-bottom: 11px;
+      margin-bottom: 15px;
       width: 34px;
       height: 34px;
     }
@@ -730,7 +822,7 @@
     @include media-w($xxl) {
       width: 40px;
       height: 40px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
   }
 
@@ -738,7 +830,13 @@
     @extend %avenirNextCyr-Medium-450;
     font-size: 15px;
     line-height: 1.2;
-    @include overflow($row-4);
+    @include overflow($row-5);
+
+    //---370px---
+    @include media-w($xxl) {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
 }
