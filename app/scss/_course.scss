@@ -52,10 +52,12 @@
   }
 
   &__btn {
+    margin-top: -2px;
     width: 479px;
 
     //---768px---
     @include media-w($smx) {
+      margin-top: 0;
       width: 100%;
       margin: 0 auto;
     }
@@ -94,7 +96,7 @@
     align-items: center;
     background: linear-gradient(286.41deg, #073447 3.63%, #08262B 90.98%);
     border-radius: 6px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
     //---500px---
     @include media-w($smm) {
@@ -182,9 +184,11 @@
     font-size: 15px;
     line-height: 1.16;
     color: $blue;
+    margin-top: 3px;
 
     //---500px---
     @include media-w($smm) {
+      margin-top: 0;
       display: block;
       margin-left: 0;
     }
@@ -372,7 +376,11 @@
     @include media-w($smm) {
       max-height: 106px;
       font-size: 14px;
-      overflow: scroll;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 0;
+      }
     }
 
   }

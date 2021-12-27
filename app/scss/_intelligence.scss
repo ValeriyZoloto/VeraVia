@@ -1,6 +1,6 @@
 .intelligence {
   position: relative;
-  padding: 120px 0px 109px 0px;
+  padding: 120px 0px 110px 0px;
   background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
   background-image: url(../images/intelligence/intelligence-bg.png);
   background-repeat: no-repeat;
@@ -50,16 +50,16 @@
   //---400px---
   @include media-w($xxs) {
     padding: 60px 0px 75px 0px;
-    background-image: url(../images/intelligence/intelligence-bg-mobile.png);
-    background-size: contain;
+    background-image: url(../images/intelligence/intelligence-bg-mobile-1.png);
     background-position: bottom 157px left 10px;
     z-index: 1;
+
   }
 
   //---370px---
   @include media-w($xxl) {
-    padding: 55px 0px 73px 0px;
-    background-position: bottom 136px left 1px;
+    padding: 56px 0px 73px 0px;
+    background-position: bottom -1px left 1px;
   }
 
   &__section-title {
@@ -129,14 +129,14 @@
   }
 
   &__item {
-    padding: 12px 14px 16px 24px;
+    padding: 10px 14px 17px 24px;
     background: linear-gradient(90deg, rgba(31, 63, 77, 0.54) 0%, rgba(31, 75, 94, 0) 100%);
 
     &:first-child {
 
       //---370px---
       @include media-w($xxl) {
-        padding: 22px 14px 20px 24px;
+        padding: 21px 14px 20px 24px;
       }
 
       .intelligence__svg-wrap {

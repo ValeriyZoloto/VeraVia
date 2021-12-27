@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  padding: 65px 0px 17px 0px;
+  padding: 63px 0px 17px 0px;
   background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
 
   //---768px---
@@ -13,10 +13,12 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 47px;
+    margin-left: -5px;
 
     //-----1440px-----
     @include media-w($xl) {
       flex-direction: column;
+      margin-left: 0;
     }
 
     //---450px---
@@ -27,9 +29,11 @@
   }
 
   &__logo {
+    margin-top: 3px;
 
     //-----1440px-----
     @include media-w($xl) {
+      margin-top: 0;
       margin-left: -54px;
       display: block;
       margin-bottom: 32px;
@@ -61,11 +65,12 @@
   }
 
   &__wrapper-top {
-    width: 479px;
+    width: 480px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
+    padding-right: 4px;
 
     //---768px---
     @include media-w($smx) {
@@ -73,6 +78,7 @@
       align-items: flex-start;
       width: 100%;
       margin-bottom: 33px;
+      padding-right: 0;
     }
   }
 
@@ -185,7 +191,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 206px;
+    max-width: 210px;
     width: 100%;
     text-align: right;
     transition: 0.5s;
@@ -233,7 +239,7 @@
 
   &__copy {
     text-align: center;
-    margin-bottom: 11px;
+    margin-bottom: 7px;
 
     //---450px---
     @include media-w($xs) {
@@ -293,10 +299,11 @@
   }
 
   &__logot {
+    margin-right: 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 285px;
+    max-width: 280px;
     width: 100%;
     margin-left: auto;
 
@@ -342,8 +349,8 @@
 
   &__scroll-up {
     position: absolute;
-    top: -157px;
-    left: 96px;
+    top: -156px;
+    left: 93px;
     border: none;
     background-color: transparent;
     transform: rotate(-90deg);
@@ -376,8 +383,8 @@
       position: absolute;
       width: 139px;
       height: 139px;
-      top: -47px;
-      left: -136px;
+      top: -64px;
+      left: -137px;
       background-image: url(../images/footer/arrow-up.png);
       @extend %bg-center-cover;
       transform: rotate(90deg);

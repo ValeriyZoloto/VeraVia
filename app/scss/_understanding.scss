@@ -115,7 +115,7 @@
 
           .understanding__text {
             max-width: 228px;
-            margin-top: -13px;
+            margin-top: -1px;
 
             //-----1230px----
             @include media-w($xlf) {
@@ -154,6 +154,11 @@
             flex-direction: column-reverse;
             align-items: flex-start;
             justify-content: space-between;
+
+            //---370px---
+            @include media-w($xxl) {
+              margin-right: 26px;
+            }
           }
 
           .understanding__text {
@@ -172,7 +177,7 @@
             @include media-w($xxl) {
               margin-top: 21px;
               margin-left: 0;
-              line-height: 1.21;
+              line-height: 17px;
             }
           }
         }
@@ -187,6 +192,12 @@
             flex-direction: column-reverse;
             align-items: flex-start;
             justify-content: space-between;
+          }
+
+          //---370px---
+          @include media-w($xxl) {
+            margin: -16px 0px 0px -22px;
+            justify-content: center;
           }
 
           .understanding__text {

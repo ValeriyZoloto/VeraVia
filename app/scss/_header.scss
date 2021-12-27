@@ -1,13 +1,15 @@
 .header {
   position: relative;
-  padding: 46px 0px 178px 0px;
+  padding: 45px 0px 178px 0px;
   background-image: url(../images/header/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: -8px;
 
   //-----1578px-----
   @include media-w($sxl) {
     padding: 36px 0px 88px 0px;
+    margin-left: 0;
   }
 
   //-----1200px----
@@ -348,7 +350,7 @@
     max-width: 576px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 110px;
+    margin-bottom: 108px;
 
     //-----1200px----
     @include media-w($lg) {
@@ -421,7 +423,7 @@
   &__guarantee-title {
     @extend %avenirNextCyr-700;
     font-size: 18px;
-    margin: 2px 0px 7px 0px;
+    margin: 2px 0px 9px 0px;
     @include overflow($row);
 
     //---620px---
@@ -488,7 +490,7 @@
 
   &__down {
     position: absolute;
-    left: 47%;
+    left: 902px;
     transform: translateX(-50%);
     bottom: 217px;
     @extend %avenirNextCyr-Demi600;
@@ -505,10 +507,15 @@
       width: 20px;
       height: 37px;
       left: -59px;
-      bottom: -13px;
+      bottom: -14px;
       background-image: url(../images/header/down.png);
       transform: rotate(90deg);
       @extend %bg-center-cover;
+    }
+
+    //-----1730px-----
+    @include media-w($xxn) {
+      left: 47%;
     }
 
     //-----1200px----
@@ -520,7 +527,7 @@
   &__link-wrapper {
     position: absolute;
     top: 132px;
-    left: 3%;
+    left: 65px;
     display: flex;
     flex-direction: column;
     align-items: center;

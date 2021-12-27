@@ -4,7 +4,7 @@
   background-image: url(../images/author/author-bg-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom -3px right 5px;
+  background-position: bottom 3px right 5px;
 
   //-----1730px-----
   @include media-w($xxn) {
@@ -124,8 +124,8 @@
   &__item {
     @extend %avenirNextCyr-Medium-450;
     font-size: 14px;
-    line-height: 1.6;
-    max-width: 500px;
+    line-height: 24px;
+    max-width: 487px;
 
     //---370px---
     @include media-w($xxl) {
@@ -150,7 +150,7 @@
   &__wrapper {
     position: absolute;
     right: 557px;
-    bottom: 97px;
+    bottom: 99px;
 
     //-----1730px-----
     @include media-w($xxn) {
