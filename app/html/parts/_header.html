@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__link-wrapper">
       <a class="header__consultation open-popup" href="#">
         <div class="header__consultation-wrapper">
@@ -49,20 +49,17 @@
           </picture>
         </a>
         <a class="header__tel" href="tel:+821075269192">
-          <picture class="header__tel-picture">
-            <source srcset="images/header/tel.webp" type="image/webp">
-            <source srcset="images/header/tel.png" type="image/png">
-            <img class="header__tel-img" src=" images/header/tel.webp" width="25"
-              height="25" alt="Телефонная трубка">
-          </picture>
+          <svg class="header__tel-img">
+            <use xlink:href="images/sprite.svg#tel"></use>
+          </svg>
           <span class="header__tel-span">
             + 82 (10) 7526-9192
           </span>
-          <button class="header__button">
+          <div class="header__button">
             <svg class="header__svg">
               <use xlink:href="images/sprite.svg#close"></use>
             </svg>
-          </button>
+          </div>
         </a>
       </div>
       <div class="header__content">
@@ -96,7 +93,12 @@
         </a>
       </div>
     </div>
-    <a class="header__down" href="#">Листайте вниз</a>
+    <a class="header__down" href="#footer">
+      <span>Листайте вниз</span>
+      <svg class="header__down-svg">
+        <use xlink:href="images/sprite.svg#down"></use>
+      </svg>
+    </a>
     <div class="line"></div>
   </header>
 

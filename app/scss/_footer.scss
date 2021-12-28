@@ -349,8 +349,8 @@
 
   &__scroll-up {
     position: absolute;
-    top: -156px;
-    left: 93px;
+    top: -154px;
+    left: 98px;
     border: none;
     background-color: transparent;
     transform: rotate(-90deg);
@@ -383,8 +383,8 @@
       position: absolute;
       width: 139px;
       height: 139px;
-      top: -64px;
-      left: -137px;
+      top: -63px;
+      left: -140px;
       background-image: url(../images/footer/arrow-up.png);
       @extend %bg-center-cover;
       transform: rotate(90deg);

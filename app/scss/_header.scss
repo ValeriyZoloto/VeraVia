@@ -244,11 +244,14 @@
     }
 
     &:hover {
-      color: $blue;
+      color: #4A8BEC;
+
+      .header__tel-img {
+        fill: #4A8BEC;
+      }
     }
 
     &:active {
-      text-decoration: underline;
       color: $blue;
     }
 
@@ -268,6 +271,7 @@
   &__tel-img {
     width: 25px;
     height: 25px;
+    fill: #4ABCEC;
 
     //---700px---
     @include media-w($smz) {
@@ -500,6 +504,7 @@
     text-transform: uppercase;
     color: $gray;
     transform: rotate(-90deg);
+    transition: 0.5s;
 
     &::before {
       position: absolute;
@@ -511,6 +516,15 @@
       background-image: url(../images/header/down.png);
       transform: rotate(90deg);
       @extend %bg-center-cover;
+      z-index: 1;
+    }
+
+    &:hover {
+      color: $title-blue;
+
+      .header__down-svg {
+        fill: #022335;
+      }
     }
 
     //-----1730px-----
@@ -522,6 +536,18 @@
     @include media-w($lg) {
       display: none;
     }
+  }
+
+  &__down-svg {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 37px;
+    left: -59px;
+    bottom: -14px;
+    fill: #4A8BEC;
+    transform: rotate(90deg);
+    z-index: -1;
   }
 
   &__link-wrapper {
@@ -624,6 +650,7 @@
       display: block;
       border: none;
       background: transparent;
+      cursor: pointer;
     }
   }
 

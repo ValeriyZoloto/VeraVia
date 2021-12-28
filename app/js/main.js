@@ -25,9 +25,12 @@ $(function () {
 
 	//Popup Записатся на ознакомительный семинар
 	//Открытие
-	$(".header__btn").on("click", function () {
-		$(".popup-introductory-bg").fadeIn(600);
-	});
+	$(".header__btn, .intelligence__btn, .why__btn, .course__btn").on(
+		"click",
+		function () {
+			$(".popup-introductory-bg").fadeIn(600);
+		}
+	);
 
 	//Закрытие по кнопке закрыть
 	$(".close-popup--introductory").on("click", function () {
@@ -155,6 +158,18 @@ $(function () {
 			},
 		],
 	});
+	//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+	//Навигация вверх-вниз
+	const windowHeight = $(window).height();
+	console.log(windowHeight);
+
+	$(".menu a, header a, .footer__scroll-up").on("click", function (e) {
+		e.preventDefault();
+		const id = $(this).attr("href"),
+			top = $(id).offset().top;
+		$("body,html").animate({ scrollTop: top }, 1500);
+	});
+
 	//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 	//Стилизация select
