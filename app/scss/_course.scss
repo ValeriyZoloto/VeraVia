@@ -97,6 +97,38 @@
     background: linear-gradient(286.41deg, #073447 3.63%, #08262B 90.98%);
     border-radius: 6px;
     margin-bottom: 32px;
+    transition: 0.5s;
+
+    &:hover {
+      .course-tabs__name-name {
+        color: $blue;
+      }
+
+      .course-tabs__name-blue {
+        color: #45eb77;
+      }
+
+      .course-tabs__name-dev {
+        background-color: #3B768F;
+        color: $white;
+      }
+
+      .button-up {
+        box-shadow: 0px 7px 20px -7px #00E0FF;
+      }
+
+      .button-down {
+        box-shadow: 0px 7px 20px -7px #00E0FF;
+      }
+
+      .course-tabs__name-content {
+        &::before {
+          left: -23px;
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
 
     //---500px---
     @include media-w($smm) {
@@ -447,6 +479,7 @@
 .ad {
   margin-bottom: 15px;
   color: red;
+  padding-left: 15px;
 }
 
 .gray {

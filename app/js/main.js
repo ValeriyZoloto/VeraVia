@@ -42,6 +42,9 @@ $(function () {
 		$(".popup-introductory-bg").fadeOut(600);
 	});
 
+	//Закрытие и перезагрузка формы
+	$(".popup-introductory__btn");
+
 	//Остановка закрытия при нажатии на форму
 	$(".popup-introductory__form").on("click", function (e) {
 		e.stopPropagation();
@@ -269,11 +272,13 @@ $(document).ready(function () {
 	//Закрытие sucsses по клику по кнопке закрыть
 	$(".close-popup--sucsses").on("click", function () {
 		$(".popup-sucsses-bg").fadeOut(100);
+		location.reload();
 	});
 
 	//Закрытие sucsses по клику по трею
 	$(".popup-sucsses-bg").click(function () {
 		$(".popup-sucsses-bg").fadeOut(100);
+		location.reload();
 	});
 
 	//Закрытие Ошибки по клику по кнопке ОК

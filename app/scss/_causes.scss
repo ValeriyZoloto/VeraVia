@@ -247,6 +247,7 @@
       .causes__item-text {
         color: $blue;
       }
+
     }
 
     &::before {
@@ -267,12 +268,24 @@
 
     &:first-child {
       padding: 38px 29px 35px 36px;
+      transition: 0.5s;
+
+      &:hover {
+        .causes__svg {
+          display: none;
+        }
+
+        .causes__svg-hover {
+          display: block;
+        }
+      }
 
       .causes__item-text {
         line-height: 18px;
       }
 
-      .causes__svg {
+      .causes__svg,
+      .causes__svg-hover {
         margin-left: 5px;
         margin-bottom: 16px;
 
@@ -341,6 +354,16 @@
     &:nth-child(2) {
       padding: 36px 30px 35px 38px;
 
+      &:hover {
+        .causes__svg {
+          display: none;
+        }
+
+        .causes__svg-hover {
+          display: block;
+        }
+      }
+
       & span {
 
         //---370px---
@@ -349,7 +372,8 @@
         }
       }
 
-      .causes__svg {
+      .causes__svg,
+      .causew__svg-hover {
 
         //---370px---
         @include media-w($xxl) {
@@ -421,7 +445,18 @@
     &:nth-child(3) {
       padding: 37px 38px 35px 34px;
 
-      .causes__svg {
+      &:hover {
+        .causes__svg {
+          display: none;
+        }
+
+        .causes__svg-hover {
+          display: block;
+        }
+      }
+
+      .causes__svg,
+      .causes__svg-hover {
         margin-left: 6px;
 
         //---370px---
@@ -490,7 +525,18 @@
     &:last-child {
       padding: 29px 40px 38px 35px;
 
-      .causes__svg--four {
+      &:hover {
+        .causes__svg {
+          display: none;
+        }
+
+        .causes__svg-hover {
+          display: block;
+        }
+      }
+
+      .causes__svg--four,
+      .causes__svg-hover {
         margin-left: 5px;
         margin-bottom: 16px;
 
@@ -591,6 +637,16 @@
     &:first-child {
       padding: 48px 40px 38px 36px;
 
+      &:hover {
+        .causes__svg {
+          display: none;
+        }
+
+        .causes__svg-hover {
+          display: block;
+        }
+      }
+
       //-----1230px----
       @include media-w($xlf) {
         padding: 48px 40px 38px 36px;
@@ -657,6 +713,16 @@
 
     &:nth-child(2) {
       padding: 37px 18px 35px 33px;
+
+      &:hover {
+        .causes__svg {
+          display: none;
+        }
+
+        .causes__svg-hover {
+          display: block;
+        }
+      }
 
       span {
         display: block;
@@ -727,6 +793,16 @@
     &:last-child {
       padding: 37px 32px 38px 33px;
 
+      &:hover {
+        .causes__svg {
+          display: none;
+        }
+
+        .causes__svg-hover {
+          display: block;
+        }
+      }
+
       span {
         display: block;
       }
@@ -795,7 +871,8 @@
   }
 
 
-  &__svg {
+  &__svg,
+  .causes__svg-hover {
     margin-bottom: 15px;
 
     //---370px---
@@ -855,4 +932,12 @@
     }
   }
 
+}
+
+.causes__svg {
+  fill: #3B768F;
+}
+
+.causes__svg-hover {
+  display: none;
 }

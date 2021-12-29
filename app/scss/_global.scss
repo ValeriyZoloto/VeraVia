@@ -154,9 +154,15 @@ a {
   @include media-w($xxl) {
     font-size: 30px;
   }
-
 }
 
 .blue {
   color: $title-blue;
+}
+
+.sprite {
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }

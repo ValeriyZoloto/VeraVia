@@ -1,7 +1,7 @@
 .header {
   position: relative;
   padding: 45px 0px 178px 0px;
-  background-image: url(../images/header/header-bg.png);
+  background-image: url(../images/header/header-bg-1.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: -8px;
@@ -582,6 +582,17 @@
 
   &__consultation {
     z-index: 99;
+    transition: 0.5s;
+
+    &:hover {
+      .header__consultation-span {
+        color: #3B768F;
+      }
+
+      .header__consultation-img {
+        opacity: 0.7;
+      }
+    }
   }
 
   &__consultation-span {
@@ -602,6 +613,7 @@
 
   &__consultation-img {
     margin-bottom: 131px;
+    z-index: 99;
 
     //----992px----
     @include media-w($mdl) {
