@@ -176,7 +176,14 @@
     &:hover {
 
       .why__svg {
+        width: 32px;
+        height: 32px;
         fill: $blue;
+      }
+
+      .why__svg-holder {
+        margin-top: -8px;
+        margin-right: 25px;
       }
 
       .why__text {
@@ -235,7 +242,7 @@
     @extend %avenirNextCyr-Medium-450;
     font-size: 16px;
     line-height: 1.44;
-    z-index: 2;
+    z-index: 0;
 
     //---370px---
     @include media-w($xxl) {
@@ -258,10 +265,12 @@
 
   &__btn {
     width: 479px;
+    height: 60px;
 
     //---768px---
     @include media-w($smx) {
       width: 100%;
+      height: auto;
     }
 
     //---370px---
@@ -279,4 +288,5 @@
       margin-left: 0;
     }
   }
+
 }

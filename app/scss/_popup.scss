@@ -429,7 +429,7 @@
 
 .popup-introductory {
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
@@ -609,6 +609,7 @@
   position: relative;
   display: block;
   margin-bottom: 19px;
+  cursor: pointer;
 
   &:last-child {
     position: relative;
@@ -675,6 +676,7 @@
 
   &:hover {
     color: $blue;
+    outline: 1px solid $blue;
   }
 
   &:focus {

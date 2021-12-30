@@ -345,9 +345,11 @@
 
   &__btn {
     width: 479px;
+    height: 60px;
 
     //---768px---
     @include media-w($smx) {
+      height: auto;
       width: 100%;
     }
 

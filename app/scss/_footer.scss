@@ -166,6 +166,13 @@
     width: 100%;
     text-align: right;
     transition: 0.5s;
+    transition: 0.5s;
+
+    &:hover {
+      .footer__tel-img {
+        fill: $blue;
+      }
+    }
 
     //---768px---
     @include media-w($smx) {
@@ -195,6 +202,12 @@
     width: 100%;
     text-align: right;
     transition: 0.5s;
+
+    &:hover {
+      .footer__tel-img {
+        fill: $blue;
+      }
+    }
 
     //---768px---
     @include media-w($smx) {
@@ -234,7 +247,7 @@
   &__tel-img {
     width: 25px;
     height: 25px;
-
+    fill: #4A8BEC;
   }
 
   &__copy {
@@ -360,6 +373,17 @@
     letter-spacing: 0.36em;
     text-transform: uppercase;
     color: $blue;
+    transition: 0.5s;
+
+    &:hover {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: block;
+      }
+    }
 
     //-----1730px-----
     @include media-w($xxn) {
@@ -376,6 +400,25 @@
     @include media-w($smx) {
       top: -95px;
       left: 83%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 139px;
+      height: 139px;
+      top: -63px;
+      left: -140px;
+      background-image: url(../images/footer/arrow-up.svg);
+      @extend %bg-center-cover;
+      transform: rotate(90deg);
+      display: none;
+
+      //---768px---
+      @include media-w($smx) {
+        width: 91px;
+        height: 91px;
+      }
     }
 
     &::after {
