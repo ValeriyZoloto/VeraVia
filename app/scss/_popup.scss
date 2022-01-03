@@ -473,7 +473,7 @@
 
     //---1025px----
     @include media-w($mda) {
-      padding: 15px 83px 15px 79px;
+      padding: 15px;
     }
 
     //----992px----
@@ -503,6 +503,8 @@
 
     //---1025px----
     @include media-w($mda) {
+      padding: 10px 5px 10px 5px;
+      height: 40px;
       margin-top: 88px;
     }
 
@@ -670,6 +672,7 @@
 
     //---1025px----
     @include media-w($mda) {
+      width: 100%;
       height: 43px;
     }
 
