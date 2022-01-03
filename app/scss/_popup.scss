@@ -184,7 +184,7 @@
 
     //----1025px----
     @include media-w($mda) {
-      font-size: 27px;
+      font-size: 23px;
     }
 
     //---768px---
@@ -229,7 +229,7 @@
 
       //---1025px----
       @include media-w($mda) {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
     }
 
@@ -416,7 +416,8 @@
 
     //---1025px----
     @include media-w($mda) {
-      height: 45px;
+      padding: 15px 21px 15px 21px;
+      height: 40px;
     }
 
     //---768px---
@@ -472,7 +473,7 @@
 
     //---1025px----
     @include media-w($mda) {
-      padding: 20px 83px 20px 79px;
+      padding: 15px 83px 15px 79px;
     }
 
     //----992px----
@@ -595,7 +596,8 @@
 
   //---1025px----
   @include media-w($mda) {
-    height: 45px;
+    padding: 15px 21px 15px 21px;
+    height: 40px;
   }
 
   &:focus {
@@ -668,7 +670,7 @@
 
     //---1025px----
     @include media-w($mda) {
-      height: 45px;
+      height: 43px;
     }
 
     //----992px----
@@ -738,8 +740,8 @@
 
   //---1025px----
   @include media-w($mda) {
-    padding: 15px 15px 21px 21px;
-    height: 45px;
+    padding: 10px 21px 10px 21px;
+    height: 40px;
     font-size: 12px;
   }
 
