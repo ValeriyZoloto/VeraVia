@@ -226,6 +226,11 @@
 
     &--introductory {
       margin-bottom: 23px;
+
+      //---1025px----
+      @include media-w($mda) {
+        margin-bottom: 15px;
+      }
     }
 
     &--blue {
@@ -411,7 +416,7 @@
 
     //---1025px----
     @include media-w($mda) {
-      height: 50px;
+      height: 45px;
     }
 
     //---768px---
@@ -465,6 +470,11 @@
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.53);
     border-radius: 20px;
 
+    //---1025px----
+    @include media-w($mda) {
+      padding: 20px 83px 20px 79px;
+    }
+
     //----992px----
     @include media-w($mdl) {
       padding: 40px 50px 40px 50px;
@@ -492,7 +502,7 @@
 
     //---1025px----
     @include media-w($mda) {
-      margin-top: 100px;
+      margin-top: 88px;
     }
 
     //----992px----
@@ -585,7 +595,7 @@
 
   //---1025px----
   @include media-w($mda) {
-    height: 50px;
+    height: 45px;
   }
 
   &:focus {
@@ -626,6 +636,11 @@
   margin-bottom: 19px;
   cursor: pointer;
 
+  //---1025px----
+  @include media-w($mda) {
+    margin-bottom: 10px;
+  }
+
   &:last-child {
     position: relative;
     margin-bottom: 43px;
@@ -653,7 +668,7 @@
 
     //---1025px----
     @include media-w($mda) {
-      height: 50px;
+      height: 45px;
     }
 
     //----992px----
@@ -724,7 +739,7 @@
   //---1025px----
   @include media-w($mda) {
     padding: 15px 15px 21px 21px;
-    height: 50px;
+    height: 45px;
     font-size: 12px;
   }
 
@@ -757,7 +772,7 @@
 
   //---1025px----
   @include media-w($mda) {
-    top: 54px;
+    top: 46px;
   }
 
   //---768px---
